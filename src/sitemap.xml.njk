@@ -1,0 +1,56 @@
+---
+permalink: "/sitemap.xml"
+eleventyExcludeFromCollections: true
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  {#
+    Only localized, indexable pages belong in the sitemap.
+
+    Language-neutral URLs such as:
+      /
+      /menu/
+      /story/
+      /contact/
+
+    are convenience endpoints and are intentionally excluded.
+  #}
+
+  {% for pageDefinition in pageList %}
+
+    {% for language in locales %}
+
+      {% set localizedUrl %}
+        {{ site.url }}/{{ language.code }}{% if pageDefinition.slug %}/{{ pageDefinition.slug }}{% endif %}/
+      {% endset %}
+
+      <url>
+        <loc>{{ localizedUrl | trim }}</loc>
+
+        {% for alternate in locales %}
+          {% set alternateUrl %}
+            {{ site.url }}/{{ alternate.code }}{% if pageDefinition.slug %}/{{ pageDefinition.slug }}{% endif %}/
+          {% endset %}
+
+          <xhtml:link
+            rel="alternate"
+            hreflang="{{ alternate.language }}"
+            href="{{ alternateUrl | trim }}"
+          />
+        {% endfor %}
+
+        <xhtml:link
+          rel="alternate"
+          hreflang="x-default"
+          href="{{ site.url }}/{% if pageDefinition.slug %}{{ pageDefinition.slug }}/{% endif %}"
+        />
+      </url>
+
+    {% endfor %}
+
+  {% endfor %}
+</urlset>

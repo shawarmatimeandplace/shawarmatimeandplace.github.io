@@ -1,0 +1,81 @@
+{
+  "home": {
+    "title": {
+      "en": "Shawarma Time & Place — Halal Shawarma in Ottawa | ByWard Market",
+      "fr": "Shawarma Time & Place — Shawarma Halal à Ottawa | Marché By"
+    },
+    "description": {
+      "en": "Ottawa's authentic halal shawarma restaurant, also serving poutine and unique Mexican-fusion dishes. Fresh ingredients and friendly service.",
+      "fr": "Restaurant authentique de shawarma halal à Ottawa, servant aussi de la poutine et de fusion mexicaine. Ingrédients frais et service amical."
+    },
+    "ogDescription": {
+      "en": "Authentic Lebanese shawarma in the ByWard Market. Wraps, platters, shawarma poutine & the famous Shawarmadilla. 100% halal.",
+      "fr": "Shawarma libanais authentique au marché By. Wraps, assiettes, poutine shawarma et le célèbre Shawarmadilla. 100 % halal."
+    },
+    "slug": ""
+  },
+
+  "menu": {
+    "title": {
+      "en": "Menu — Shawarma Time & Place | Halal Shawarma in Ottawa",
+      "fr": "Menu — Shawarma Time & Place | Shawarma Halal à Ottawa"
+    },
+    "description": {
+      "en": "Full menu — shawarma wraps, platters, poutines, the Shawarmadilla, fresh salads, sides and baklava. 100% halal, made fresh in Ottawa's ByWard Market.",
+      "fr": "Menu complet — wraps shawarma, assiettes, poutines, Shawarmadilla, salades fraîches, accompagnements et baklava. 100 % halal, préparé frais au marché By."
+    },
+    "ogDescription": {
+      "en": "Full menu of halal shawarma, wraps, platters, poutines, Mexican fusion, salads, sides and desserts in Ottawa's ByWard Market.",
+      "fr": "Menu complet de shawarma halal, wraps, assiettes, poutines, fusion mexicaine, salades, accompagnements et desserts au marché By d'Ottawa."
+    },
+    "slug": "menu"
+  },
+
+  "story": {
+    "title": {
+      "en": "Our Story — Shawarma Time & Place | Halal Shawarma in Ottawa",
+      "fr": "Notre Histoire — Shawarma Time & Place | Shawarma Halal à Ottawa"
+    },
+    "description": {
+      "en": "From Beirut to the ByWard Market — the story of Shawarma Time & Place and Chef Abou Adal. Authentic Lebanese shawarma, made with tradition in Ottawa.",
+      "fr": "De Beyrouth au marché By — l'histoire de Shawarma Time & Place et du chef Abou Adal. Shawarma libanais authentique, préparé selon la tradition à Ottawa."
+    },
+    "ogDescription": {
+      "en": "Discover the story of Shawarma Time & Place, Chef Abou Adal and our Lebanese culinary roots in Ottawa's ByWard Market.",
+      "fr": "Découvrez l'histoire de Shawarma Time & Place, du chef Abou Adal et de nos racines culinaires libanaises au marché By d'Ottawa."
+    },
+    "slug": "story"
+  },
+
+  "contact": {
+    "title": {
+      "en": "Find Us — Shawarma Time & Place | Halal Shawarma in Ottawa",
+      "fr": "Nous Joindre — Shawarma Time & Place | Shawarma Halal à Ottawa"
+    },
+    "description": {
+      "en": "Visit Shawarma Time & Place at 6 Byward Market Square, Ottawa. Call +1 (613) 241-2882 or email info@shawarmatimeandplace.ca. 100% halal shawarma in the ByWard Market.",
+      "fr": "Visitez Shawarma Time & Place au 6, Byward Market Square, Ottawa. Appelez le +1 (613) 241-2882 ou écrivez à info@shawarmatimeandplace.ca. Shawarma 100 % halal au marché By."
+    },
+    "ogDescription": {
+      "en": "Find Shawarma Time & Place at 6 Byward Market Square in Ottawa's ByWard Market.",
+      "fr": "Trouvez Shawarma Time & Place au 6 Byward Market Square, dans le marché By d'Ottawa."
+    },
+    "slug": "contact"
+  },
+
+  "privacy": {
+    "title": {
+      "en": "Privacy Policy — Shawarma Time & Place",
+      "fr": "Politique de confidentialité — Shawarma Time & Place"
+    },
+    "description": {
+      "en": "Privacy policy for Shawarma Time & Place, Ottawa.",
+      "fr": "Politique de confidentialité de Shawarma Time & Place, Ottawa."
+    },
+    "ogDescription": {
+      "en": "Privacy policy for Shawarma Time & Place.",
+      "fr": "Politique de confidentialité de Shawarma Time & Place."
+    },
+    "slug": "privacy"
+  }
+}

@@ -1,0 +1,172 @@
+---
+pagination:
+  data: locales
+  size: 1
+  alias: locale
+
+eleventyComputed:
+  permalink: "/{{ locale.code }}/contact/index.html"
+
+pageId: contact
+---
+
+{% extends "layout.njk" %}
+
+{% set t = i18n[locale.code] %}
+
+
+{% block content %}
+
+<section
+  class="section section--cream"
+  id="find-us"
+>
+
+  <div class="container">
+
+    <header class="section__head reveal">
+
+      <p class="section__eyebrow">
+        {{ t.find.eyebrow }}
+      </p>
+
+      <h1 class="section__title">
+        {{ t.find.title }}
+      </h1>
+
+      <p class="section__sub">
+        {{ t.find.sub }}
+      </p>
+
+    </header>
+
+
+    <div class="findus">
+
+      <div class="findus__map reveal">
+
+        <iframe
+          src="https://www.google.com/maps?q=6+ByWard+Market+Square,+Ottawa,+ON&output=embed"
+          title="Map — Shawarma Time & Place, 6 Byward Market Square, Ottawa"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+        ></iframe>
+
+      </div>
+
+
+      <div class="findus__info">
+
+        <a
+          class="contact-card reveal"
+          href="{{ site.maps }}"
+          target="_blank"
+          rel="noopener"
+        >
+
+          <svg
+            class="contact-card__icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path d="M12 2C8.13 2 5 5.13 5 8.5c0 5.25 7 13 7 13s7-7.75 7-13C19 5.13 15.87 2 12 2zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/>
+          </svg>
+
+          <span>
+            <strong>{{ t.find.visit }}</strong><br>
+            6 Byward Market Square<br>
+            Ottawa, ON K1N 5M4
+          </span>
+
+        </a>
+
+
+        <a
+          class="contact-card reveal"
+          href="tel:+16132412882"
+        >
+
+          <svg
+            class="contact-card__icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+          </svg>
+
+          <span>
+            <strong>{{ t.find.call }}</strong><br>
+            +1 (613) 241-2882
+          </span>
+
+        </a>
+
+
+        <a
+          class="contact-card reveal"
+          href="mailto:info@shawarmatimeandplace.ca"
+        >
+
+          <svg
+            class="contact-card__icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+
+          <span>
+            <strong>{{ t.find.email }}</strong><br>
+            info@shawarmatimeandplace.ca
+          </span>
+
+        </a>
+
+
+        <div class="hours reveal">
+
+          <h3>{{ t.find.hours }}</h3>
+
+          {# TODO HOURS: replace TBD with real opening hours #}
+
+          <table>
+            <tr>
+              <td>{{ t.hours.mon }}</td>
+              <td>{{ hours.mon.open }} – {{ hours.mon.close }}</td>
+            </tr>
+
+            <tr>
+              <td>{{ t.hours.wed }}</td>
+              <td>{{ hours.wed.open }} – {{ hours.wed.close }}</td>
+            </tr>
+
+            <tr>
+              <td>{{ t.hours.sat }}</td>
+              <td>{{ hours.sat.open }} – {{ hours.sat.close }}</td>
+            </tr>
+
+            <tr>
+              <td>{{ t.hours.sun }}</td>
+              <td>{{ hours.sun.open }} – {{ hours.sun.close }}</td>
+            </tr>
+          </table>
+
+
+          <p class="hours__note">
+            <a href="tel:+16132412882">
+              {{ t.find.hoursNote }}
+            </a>
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{% endblock %}

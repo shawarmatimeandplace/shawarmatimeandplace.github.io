@@ -1,0 +1,519 @@
+{
+  "MENU_CATEGORIES": [
+    {
+      "id": "all",
+      "en": "All",
+      "fr": "Tout"
+    },
+    {
+      "id": "combos",
+      "en": "Combos",
+      "fr": "Combos"
+    },
+    {
+      "id": "wraps",
+      "en": "Pitas & Wraps",
+      "fr": "Pitas & Wraps"
+    },
+    {
+      "id": "platters",
+      "en": "Platters",
+      "fr": "Assiettes"
+    },
+    {
+      "id": "poutines",
+      "en": "Poutines",
+      "fr": "Poutines"
+    },
+    {
+      "id": "fusion",
+      "en": "Mexican Fusion",
+      "fr": "Fusion Mexicaine"
+    },
+    {
+      "id": "salads",
+      "en": "Fresh Salads",
+      "fr": "Salades Fraîches"
+    },
+    {
+      "id": "sides",
+      "en": "Sides",
+      "fr": "Accompagnements"
+    },
+    {
+      "id": "desserts",
+      "en": "Desserts",
+      "fr": "Desserts"
+    }
+  ],
+  "MENU_ITEMS": [
+    {
+      "id": "classic-combo",
+      "cat": "combos",
+      "price": 16.49,
+      "photo": "media/ShawarmaTimeAndPlace_ClassicCombo.jpg",
+      "en": {
+        "name": "Classic Combo",
+        "desc": "One shawarma wrap (chicken, beef, or donair) served with garlic potatoes and a soft drink."
+      },
+      "fr": {
+        "name": "Combo Classique",
+        "desc": "Un wrap shawarma (poulet, bœuf ou donair) servi avec des pommes de terre à l'ail et une boisson gazeuse."
+      },
+      "photoAvailable": true
+    },
+    {
+      "id": "vegetarian-combo",
+      "cat": "combos",
+      "price": 16.49,
+      "veg": true,
+      "photo": "media/ShawarmaTimeAndPlace_VegetarianCombo.jpg",
+      "en": {
+        "name": "Vegetarian Combo",
+        "desc": "One falafel or vegetarian wrap served with garlic potatoes and a soft drink."
+      },
+      "fr": {
+        "name": "Combo Végétarien",
+        "desc": "Un wrap falafel ou végétarien servi avec des pommes de terre à l'ail et une boisson gazeuse."
+      },
+      "photoAvailable": true
+    },
+    {
+      "id": "chicken-shawarma",
+      "cat": "wraps",
+      "price": 9.99,
+      "signature": true,
+      "photo": "media/ShawarmaTimeAndPlace_ChickenShawarmaWrap.jpg",
+      "en": {
+        "name": "Chicken Shawarma",
+        "desc": "Tender marinated chicken wrapped in warm pita bread with fresh vegetables."
+      },
+      "fr": {
+        "name": "Shawarma au Poulet",
+        "desc": "Poulet mariné tendre enveloppé dans un pain pita chaud avec des légumes frais."
+      },
+      "photoAvailable": true
+    },
+    {
+      "id": "beef-shawarma",
+      "cat": "wraps",
+      "price": 9.99,
+      "photo": "media/ShawarmaTimeAndPlace_BeefShawarmaWrap.jpg",
+      "en": {
+        "name": "Beef Shawarma",
+        "desc": "Thinly sliced seasoned beef wrapped in warm pita bread with fresh vegetables."
+      },
+      "fr": {
+        "name": "Shawarma au Bœuf",
+        "desc": "Bœuf assaisonné tranché finement, enveloppé dans un pain pita chaud avec des légumes frais."
+      },
+      "photoAvailable": true
+    },
+    {
+      "id": "donair-shawarma",
+      "cat": "wraps",
+      "price": 9.99,
+      "photo": "media/ShawarmaTimeAndPlace_DonairShawarmaWrap.jpg",
+      "en": {
+        "name": "Donair Shawarma",
+        "desc": "Savory spiced donair beef layered in soft pita bread with fresh vegetables."
+      },
+      "fr": {
+        "name": "Shawarma Donair",
+        "desc": "Bœuf donair savoureux et épicé dans un pain pita moelleux avec des légumes frais."
+      },
+      "photoAvailable": true
+    },
+    {
+      "id": "mixed-shawarma",
+      "cat": "wraps",
+      "price": 10.99,
+      "photo": "media/ShawarmaTimeAndPlace_MixedShawarmaWrap.jpg",
+      "en": {
+        "name": "Mixed Shawarma",
+        "desc": "The best of both worlds: marinated chicken and beef combined in a warm pita bread with fresh vegetables."
+      },
+      "fr": {
+        "name": "Shawarma Mixte",
+        "desc": "Le meilleur des deux mondes : poulet et bœuf marinés combinés dans un pita chaud avec des légumes frais."
+      },
+      "photoAvailable": true
+    },
+    {
+      "id": "falafel-shawarma",
+      "cat": "wraps",
+      "price": 9.99,
+      "veg": true,
+      "photo": "media/ShawarmaTimeAndPlace_FalafelShawarmaWrap.jpg",
+      "en": {
+        "name": "Falafel Shawarma",
+        "desc": "Crispy golden falafel wrapped in fresh pita bread with vegetables of your choice."
+      },
+      "fr": {
+        "name": "Shawarma Falafel",
+        "desc": "Falafels dorés et croustillants dans un pita frais avec les légumes de votre choix."
+      },
+      "photoAvailable": true
+    },
+    {
+      "id": "vegetarian-shawarma",
+      "cat": "wraps",
+      "price": 9.99,
+      "veg": true,
+      "photo": "media/ShawarmaTimeAndPlace_VegetarianShawarmaWrap.jpg",
+      "en": {
+        "name": "Vegetarian Shawarma",
+        "desc": "A colourful mix of fresh vegetables and golden fries wrapped in warm pita bread."
+      },
+      "fr": {
+        "name": "Shawarma Végétarien",
+        "desc": "Un mélange coloré de légumes frais et de frites dorées dans un pain pita chaud."
+      },
+      "photoAvailable": false
+    },
+    {
+      "id": "chicken-platter",
+      "cat": "platters",
+      "price": 19.99,
+      "photo": "media/ShawarmaTimeAndPlace_ChickenPlatter.jpg",
+      "en": {
+        "name": "Chicken Platter",
+        "desc": "Served with seasoned rice, garlic potatoes, fresh salad, and sauces of your choice."
+      },
+      "fr": {
+        "name": "Assiette Poulet",
+        "desc": "Servie avec riz assaisonné, pommes de terre à l'ail, salade fraîche et sauces de votre choix."
+      },
+      "photoAvailable": true
+    },
+    {
+      "id": "beef-platter",
+      "cat": "platters",
+      "price": 19.99,
+      "photo": "media/ShawarmaTimeAndPlace_BeefPlatter.jpg",
+      "en": {
+        "name": "Beef Platter",
+        "desc": "Served with seasoned rice, garlic potatoes, fresh salad, and sauces of your choice."
+      },
+      "fr": {
+        "name": "Assiette Bœuf",
+        "desc": "Servie avec riz assaisonné, pommes de terre à l'ail, salade fraîche et sauces de votre choix."
+      },
+      "photoAvailable": true
+    },
+    {
+      "id": "donair-platter",
+      "cat": "platters",
+      "price": 19.99,
+      "photo": "media/ShawarmaTimeAndPlace_DonairPlatter.jpg",
+      "en": {
+        "name": "Donair Platter",
+        "desc": "Served with seasoned rice, garlic potatoes, fresh salad, and sauces of your choice."
+      },
+      "fr": {
+        "name": "Assiette Donair",
+        "desc": "Servie avec riz assaisonné, pommes de terre à l'ail, salade fraîche et sauces de votre choix."
+      },
+      "photoAvailable": true
+    },
+    {
+      "id": "mixed-platter",
+      "cat": "platters",
+      "price": 21.99,
+      "signature": true,
+      "photo": "media/ShawarmaTimeAndPlace_MixedPlatter.jpg",
+      "en": {
+        "name": "Mixed Platter",
+        "desc": "The ultimate feast: a generous combination of marinated chicken and beef shawarma served with seasoned rice, garlic potatoes, fresh salad, and sauces of your choice."
+      },
+      "fr": {
+        "name": "Assiette Mixte",
+        "desc": "Le festin ultime : une généreuse combinaison de shawarma de poulet et de bœuf mariné, servie avec riz assaisonné, pommes de terre à l'ail, salade fraîche et sauces de votre choix."
+      },
+      "photoAvailable": true
+    },
+    {
+      "id": "falafel-platter",
+      "cat": "platters",
+      "price": 19.99,
+      "veg": true,
+      "photo": "media/ShawarmaTimeAndPlace_FalafelPlatter.jpg",
+      "en": {
+        "name": "Falafel Platter",
+        "desc": "Crispy falafels served with seasoned rice, garlic potatoes, fresh salad, and sauces of your choice."
+      },
+      "fr": {
+        "name": "Assiette Falafel",
+        "desc": "Falafels croustillants servis avec riz assaisonné, pommes de terre à l'ail, salade fraîche et sauces de votre choix."
+      },
+      "photoAvailable": true
+    },
+    {
+      "id": "vegetarian-platter",
+      "cat": "platters",
+      "price": 19.99,
+      "veg": true,
+      "photo": "media/ShawarmaTimeAndPlace_VegetarianPlatter.jpg",
+      "en": {
+        "name": "Vegetarian Platter",
+        "desc": "A mix of fresh lettuce, tomatoes, onions, cucumbers, pickles, and turnips, served with crispy fries and your choice of sauces."
+      },
+      "fr": {
+        "name": "Assiette Végétarienne",
+        "desc": "Un mélange de laitue fraîche, tomates, oignons, concombres, cornichons et navets, servi avec des frites croustillantes et vos sauces favorites."
+      },
+      "photoAvailable": false
+    },
+    {
+      "id": "classic-poutine",
+      "cat": "poutines",
+      "price": 9.99,
+      "photo": "media/ShawarmaTimeAndPlace_ClassicPoutine.jpg",
+      "en": {
+        "name": "Classic Poutine",
+        "desc": "A true Canadian favourite: golden fries topped with fresh cheese curds and rich gravy."
+      },
+      "fr": {
+        "name": "Poutine Classique",
+        "desc": "Un classique canadien : frites dorées garnies de fromage en grains frais et de sauce brune riche."
+      },
+      "photoAvailable": true
+    },
+    {
+      "id": "shawarma-poutine",
+      "cat": "poutines",
+      "price": 13.99,
+      "signature": true,
+      "photo": "media/ShawarmaTimeAndPlace_ShawarmaPoutine.jpg",
+      "en": {
+        "name": "Shawarma Poutine",
+        "desc": "Canada's classic with a Middle Eastern twist! Crispy fries topped with tender chicken, beef, or donair, fresh cheese curds, and rich gravy."
+      },
+      "fr": {
+        "name": "Poutine Shawarma",
+        "desc": "Le classique canadien avec une touche du Moyen-Orient ! Frites croustillantes garnies de poulet, bœuf ou donair tendre, fromage en grains frais et sauce brune riche."
+      },
+      "photoAvailable": true
+    },
+    {
+      "id": "shawarmadilla",
+      "cat": "fusion",
+      "price": 10.99,
+      "signature": true,
+      "photo": "media/ShawarmaTimeAndPlace_Shawarmadilla.jpg",
+      "en": {
+        "name": "Shawarmadilla",
+        "desc": "A fusion masterpiece! Grilled tortilla stuffed with melted cheese, tender shawarma (chicken or beef), with veggies of your choice. Served with your choice of side."
+      },
+      "fr": {
+        "name": "Shawarmadilla",
+        "desc": "Un chef-d'œuvre fusion ! Tortilla grillée garnie de fromage fondu, de shawarma tendre (poulet ou bœuf) et de légumes de votre choix. Servie avec l'accompagnement de votre choix."
+      },
+      "photoAvailable": true
+    },
+    {
+      "id": "fattouche",
+      "cat": "salads",
+      "price": 5.99,
+      "veg": true,
+      "photo": "media/ShawarmaTimeAndPlace_Fattouche.jpg",
+      "en": {
+        "name": "Fattouche",
+        "desc": "Fresh romaine lettuce, cucumbers, tomatoes, radishes, and toasted pita chips with lemon and sumac dressing."
+      },
+      "fr": {
+        "name": "Fattouche",
+        "desc": "Laitue romaine fraîche, concombres, tomates, radis et chips de pita grillées, vinaigrette au citron et au sumac."
+      },
+      "photoAvailable": true
+    },
+    {
+      "id": "tabboule",
+      "cat": "salads",
+      "price": 5.99,
+      "veg": true,
+      "photo": "media/ShawarmaTimeAndPlace_Tabboule.jpg",
+      "en": {
+        "name": "Tabboule",
+        "desc": "A refreshing mix of finely chopped parsley, diced tomatoes, and onions, with a squeeze of fresh lemon and olive oil."
+      },
+      "fr": {
+        "name": "Taboulé",
+        "desc": "Un mélange rafraîchissant de persil finement haché, de tomates en dés et d'oignons, avec un filet de citron frais et d'huile d'olive."
+      },
+      "photoAvailable": true
+    },
+    {
+      "id": "shawarma-salad",
+      "cat": "salads",
+      "price": 10.99,
+      "photo": "media/ShawarmaTimeAndPlace_ShawarmaSalad.jpg",
+      "en": {
+        "name": "Shawarma Salad",
+        "desc": "Your choice of tender chicken, beef, or donair shawarma served over fresh romaine lettuce, tomatoes, cucumbers, onions, and pickles, with pita chips and your favourite sauce."
+      },
+      "fr": {
+        "name": "Salade Shawarma",
+        "desc": "Votre choix de shawarma tendre (poulet, bœuf ou donair) sur un lit de romaine fraîche, tomates, concombres, oignons et cornichons, avec chips de pita et votre sauce favorite."
+      },
+      "photoAvailable": true
+    },
+    {
+      "id": "chicken-on-the-rocks",
+      "cat": "salads",
+      "price": 13.99,
+      "photo": "media/ShawarmaTimeAndPlace_ChickenOnTheRocks.jpg",
+      "en": {
+        "name": "Chicken on the Rocks",
+        "desc": "Tender, juicy shawarma meat served over a bed of warm, seasoned rice, and finished with our signature sauces."
+      },
+      "fr": {
+        "name": "Chicken on the Rocks",
+        "desc": "Shawarma tendre et juteux servi sur un lit de riz chaud assaisonné, garni de nos sauces signature."
+      },
+      "photoAvailable": false
+    },
+    {
+      "id": "garlic-potatoes",
+      "cat": "sides",
+      "price": 5.99,
+      "photo": "media/Garlic%20potatoes_v2.jpg",
+      "en": {
+        "name": "Garlic Potatoes",
+        "desc": "Crispy, golden roasted potatoes tossed in our signature garlic seasoning. Served with a side of garlic sauce."
+      },
+      "fr": {
+        "name": "Pommes de Terre à l'Ail",
+        "desc": "Pommes de terre rôties croustillantes et dorées, assaisonnées à l'ail. Servies avec sauce à l'ail."
+      },
+      "photoAvailable": true
+    },
+    {
+      "id": "fries",
+      "cat": "sides",
+      "price": 5.99,
+      "photo": "media/Fries_v2.png",
+      "en": {
+        "name": "Fries",
+        "desc": "Hot, crispy fries made fresh to order. A perfect side for any meal. Served with a side of ketchup or garlic sauce."
+      },
+      "fr": {
+        "name": "Frites",
+        "desc": "Frites chaudes et croustillantes, fraîchement préparées. Servies avec ketchup ou sauce à l'ail."
+      },
+      "photoAvailable": true
+    },
+    {
+      "id": "rice",
+      "cat": "sides",
+      "price": 5.99,
+      "photo": "media/Rice.jpg",
+      "en": {
+        "name": "Rice",
+        "desc": "Fluffy, seasoned rice cooked to perfection. A great side for any platter or wrap."
+      },
+      "fr": {
+        "name": "Riz",
+        "desc": "Riz moelleux et assaisonné, cuit à la perfection. L'accompagnement idéal de toute assiette ou wrap."
+      },
+      "photoAvailable": true
+    },
+    {
+      "id": "hummus",
+      "cat": "sides",
+      "price": 1.99,
+      "veg": true,
+      "photo": "media/ShawarmaTimeAndPlace_Hummus.jpg",
+      "en": {
+        "name": "Hummus",
+        "desc": "Creamy chickpea dip with a rich nutty flavour."
+      },
+      "fr": {
+        "name": "Hoummos",
+        "desc": "Trempette de pois chiches crémeuse au goût riche et noiseté."
+      },
+      "photoAvailable": true
+    },
+    {
+      "id": "garlic-sauce",
+      "cat": "sides",
+      "price": 1.99,
+      "photo": "media/ShawarmaTimeAndPlace_GarlicSauce.jpg",
+      "en": {
+        "name": "Garlic Sauce",
+        "desc": "Rich and aromatic garlic sauce."
+      },
+      "fr": {
+        "name": "Sauce à l'Ail",
+        "desc": "Sauce à l'ail riche et aromatique."
+      },
+      "photoAvailable": false
+    },
+    {
+      "id": "tahini",
+      "cat": "sides",
+      "price": 1.99,
+      "photo": "media/ShawarmaTimeAndPlace_Tahini.jpg",
+      "en": {
+        "name": "Tahini",
+        "desc": "Smooth sesame-based sauce with a nutty flavour."
+      },
+      "fr": {
+        "name": "Tahini",
+        "desc": "Sauce onctueuse à base de sésame au goût noiseté."
+      },
+      "photoAvailable": false
+    },
+    {
+      "id": "sweet-sauce",
+      "cat": "sides",
+      "price": 1.99,
+      "photo": "media/ShawarmaTimeAndPlace_SweetSauce.jpg",
+      "en": {
+        "name": "Sweet Sauce",
+        "desc": "Tangy and savoury sauce."
+      },
+      "fr": {
+        "name": "Sauce Sucrée",
+        "desc": "Sauce sucrée-salée et savoureuse."
+      },
+      "photoAvailable": false
+    },
+    {
+      "id": "pita-bread",
+      "cat": "sides",
+      "price": 0.75,
+      "photo": "media/Pita%20Bread.jpg",
+      "en": {
+        "name": "Pita Bread",
+        "desc": "One piece of soft Middle Eastern-style flatbread."
+      },
+      "fr": {
+        "name": "Pain Pita",
+        "desc": "Un pain pita moelleux de style moyen-oriental."
+      },
+      "photoAvailable": true
+    },
+    {
+      "id": "baklava",
+      "cat": "desserts",
+      "price": 4.99,
+      "photo": "media/Baklava_v2.jpg",
+      "en": {
+        "name": "Baklava",
+        "desc": "Golden, flaky baklava layered with crushed nuts and sweet syrup. Crispy, buttery, and perfectly sweet — a classic dessert made to satisfy."
+      },
+      "fr": {
+        "name": "Baklava",
+        "desc": "Baklava doré et feuilleté, garni de noix concassées et de sirop sucré. Croustillant, beurré et parfaitement sucré — un dessert classique irrésistible."
+      },
+      "photoAvailable": true
+    }
+  ],
+  "SIGNATURE_ORDER": [
+    "chicken-shawarma",
+    "shawarma-poutine",
+    "mixed-platter",
+    "shawarmadilla"
+  ]
+}

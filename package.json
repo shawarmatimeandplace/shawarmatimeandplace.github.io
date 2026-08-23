@@ -1,0 +1,25 @@
+{
+  "name": "shawarma-time-and-place",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static bilingual website for Shawarma Time & Place.",
+  "type": "module",
+  "author": {
+    "name": "Bradley Myers",
+    "email": "myers.bradley@hotmail.com",
+    "url": "https://github.com/BLM16"
+  },
+  "homepage": "https://shawarmatimeandplace.ca",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shawarmatimeandplace/website"
+  },
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "clean": "rm -rf _site"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}

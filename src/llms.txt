@@ -1,0 +1,27 @@
+# Shawarma Time & Place
+
+> Shawarma Time & Place is a halal shawarma restaurant in Ottawa's ByWard Market.
+
+## Website
+
+- [English homepage](https://shawarmatimeandplace.ca/en/)
+- [French homepage](https://shawarmatimeandplace.ca/fr/)
+- [English menu](https://shawarmatimeandplace.ca/en/menu/)
+- [French menu](https://shawarmatimeandplace.ca/fr/menu/)
+- [English story](https://shawarmatimeandplace.ca/en/story/)
+- [French story](https://shawarmatimeandplace.ca/fr/story/)
+- [English contact](https://shawarmatimeandplace.ca/en/contact/)
+- [French contact](https://shawarmatimeandplace.ca/fr/contact/)
+
+## Business
+
+- Name: Shawarma Time & Place
+- Address: 6 Byward Market Square, Ottawa, ON K1N 5M4, Canada
+- Phone: +1 (613) 241-2882
+- Email: info@shawarmatimeandplace.ca
+- Cuisine: Lebanese, Middle Eastern, shawarma, poutine
+- Ordering: https://www.ubereats.com/ca/store/shawarma-time-%26-place/MEVx5YdtR1KrEEctI5ihAw
+
+## Notes
+
+The `/en/` and `/fr/` URLs are the canonical English and French versions of the public site.

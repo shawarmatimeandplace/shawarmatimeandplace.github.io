@@ -1,0 +1,102 @@
+---
+pagination:
+  data: privacyLocales
+  size: 1
+  alias: locale
+
+eleventyComputed:
+  permalink: "/{{ locale.code }}/privacy/index.html"
+
+pageId: privacy
+---
+
+{% extends "layout.njk" %}
+
+{% set t = i18n[locale.code] %}
+
+
+{% block content %}
+
+<div class="container legal">
+
+  <h1>Privacy Policy</h1>
+
+  <p>
+    Shawarma Time &amp; Place is committed to protecting your privacy.
+    This statement explains what information we collect when you use our
+    website and how it is used. Questions? Contact us at
+    <a href="mailto:info@shawarmatimeandplace.ca">
+      info@shawarmatimeandplace.ca
+    </a>.
+  </p>
+
+
+  <h2>Who we are</h2>
+
+  <p>
+    Our website address is
+    <a href="https://shawarmatimeandplace.ca">
+      https://shawarmatimeandplace.ca
+    </a>
+    (shawarmatimeandplace.com redirects here). We are a shawarma
+    restaurant in the heart of Ottawa's ByWard Market, offering authentic
+    shawarmas, poutines and Mexican-fusion creations inspired by Lebanese
+    culinary heritage.
+  </p>
+
+
+  <h2>Cookies &amp; stored data</h2>
+
+  <p>
+    This site stores a single preference in your browser: your language
+    choice (English or French), so the site remembers it on your next visit.
+    It contains no personal data and can be cleared at any time through your
+    browser settings.
+  </p>
+
+
+  <h2>Analytics</h2>
+
+  <p>
+    We may use Microsoft Clarity and Microsoft Advertising to understand how
+    visitors use our website (behavioural metrics, heatmaps and session
+    replay) so we can improve it. Data collected through these tools is
+    controlled by Microsoft and processed according to the
+    <a
+      href="https://www.microsoft.com/privacy/privacystatement"
+      target="_blank"
+      rel="noopener"
+    >Microsoft Privacy Statement</a>.
+    It cannot be used to personally identify you. To view, delete or manage
+    this data, use the
+    <a
+      href="https://account.microsoft.com/privacy"
+      target="_blank"
+      rel="noopener"
+    >Microsoft Privacy Dashboard</a>.
+  </p>
+
+
+  <h2>What we don't do</h2>
+
+  <p>
+    We do not run user accounts, we do not collect payment information on
+    this site (ordering is handled by Uber Eats under their own privacy
+    policy), and we do not sell or share personally identifiable information
+    with third parties.
+  </p>
+
+
+  <h2>Contact</h2>
+
+  <p>
+    Shawarma Time &amp; Place · 6 Byward Market Square, Ottawa, ON K1N 5M4 ·
+    <a href="tel:+16132412882">+1 (613) 241-2882</a> ·
+    <a href="mailto:info@shawarmatimeandplace.ca">
+      info@shawarmatimeandplace.ca
+    </a>
+  </p>
+
+</div>
+
+{% endblock %}

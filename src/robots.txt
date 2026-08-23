@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shawarmatimeandplace.ca/sitemap.xml

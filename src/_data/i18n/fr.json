@@ -1,0 +1,107 @@
+{
+  "a11y": {
+    "skip": "Aller au contenu"
+  },
+
+  "nav": {
+    "home": "Accueil",
+    "menu": "Menu",
+    "story": "Notre histoire",
+    "find": "Nous trouver",
+    "order": "Commander",
+    "main": "Navigation principale",
+    "open": "Ouvrir la navigation"
+  },
+
+  "hero": {
+    "eyebrow": "Marché By · Ottawa",
+    "title1": "Shawarma halal",
+    "title2": "à Ottawa",
+    "title3": "Yalla Habibi.",
+    "sub": "Shawarma libanais authentique, poutines et créations fusion mexicaines — préparés frais et servis avec amour au cœur du marché By.",
+    "cta1": "Commander",
+    "cta2": "Voir le menu",
+    "b1": "100 % halal certifié",
+    "b2": "Bouchées tardives",
+    "b3": "Frais chaque jour"
+  },
+
+  "sig": {
+    "eyebrow": "Favoris",
+    "title": "Ceux dont tout le monde parle",
+    "sub": "Commencez ici — nos créations les plus populaires, du célèbre Shawarmadilla à la poutine shawarma préférée d'Ottawa.",
+    "more": "Voir le menu complet"
+  },
+
+  "band": {
+    "title": "Yalla Habibi.",
+    "sub": "100 % halal · frais chaque jour · tard le soir — on se voit au marché."
+  },
+
+  "rev": {
+    "eyebrow": "Avis",
+    "title": "Ce qu'Ottawa en dit",
+    "ph1": "Avis Google bientôt disponible — cette carte est un espace réservé pour un véritable avis client.",
+    "ph2": "Avis Google bientôt disponible — cette carte est un espace réservé pour un véritable avis client.",
+    "ph3": "Avis Google bientôt disponible — cette carte est un espace réservé pour un véritable avis client.",
+    "phCite": "— Avis Google"
+  },
+
+  "menu": {
+    "eyebrow": "Notre Menu",
+    "title": "Bon. Frais. Inoubliable.",
+    "sub": "Wraps, assiettes, poutines et plus — tout est 100 % halal et préparé sur commande.",
+    "categories": "Catégories du menu",
+    "note": "* Prix affichés pour les petites portions. Les prix en restaurant et en ligne peuvent varier.",
+    "order": "Commander en ligne"
+  },
+
+  "cta": {
+    "title": "Une Grosse Commande ?",
+    "sub": "Dîners de bureau, rassemblements familiaux, événements — écrivez-nous ou appelez-nous et on s'occupe de tout.",
+    "cta1": "Appelez +1 (613) 241-2882",
+    "cta2": "Écrivez-nous"
+  },
+
+  "story": {
+    "eyebrow": "Notre histoire",
+    "title": "De Beyrouth au marché By",
+    "p1": "Chez Shawarma Time and Place, la nourriture est bien plus qu'un repas — c'est une tradition. Inspirés par le riche héritage culinaire du Liban, nous avons créé ce restaurant pour apporter le shawarma libanais authentique au cœur du marché By d'Ottawa. Chaque recette reflète notre engagement envers la qualité, l'authenticité et la fraîcheur.",
+    "p2": "Shawarma Time and Place, c'est la communauté, la culture et les gens réunis autour d'une bonne table. Que ce soit votre première ou votre centième visite, c'est un honneur de vous servir.",
+    "chefTitle": "Rencontrez le chef Abou Adal",
+    "p3": "Derrière chaque plat se trouve le chef Abou Adal, dont la passion pour la cuisine libanaise anime toute notre cuisine. Du shawarma grillé lentement au falafel fraîchement préparé, chaque plat est confectionné selon des techniques traditionnelles, avec souci du détail et saveur authentique.",
+    "cta": "Goûtez l'Histoire — Voir le Menu"
+  },
+
+  "find": {
+    "eyebrow": "Nous joindre",
+    "title": "Au Cœur du Marché By",
+    "sub": "Une question? Une grosse commande? Envie de nous écrire? Il nous fera plaisir de vous répondre.",
+    "visit": "Adresse",
+    "call": "Téléphone",
+    "email": "Courriel",
+    "hours": "Heures d'ouverture",
+    "hoursNote": "Appelez-nous pour les heures du jour →"
+  },
+
+  "hours": {
+    "mon": "Lundi – Mardi",
+    "wed": "Mercredi – Vendredi",
+    "sat": "Samedi",
+    "sun": "Dimanche"
+  },
+
+  "badge": {
+    "sig": "Signature",
+    "veg": "Végétarien"
+  },
+
+  "footer": {
+    "tag": "Shawarma halal, poutines et fusion mexicaine au cœur du marché By d'Ottawa. Yalla Habibi.",
+    "halal": "100 % halal certifié",
+    "explore": "Explorer",
+    "contact": "Contact",
+    "privacy": "Politique de confidentialité",
+    "rights": "Tous droits réservés."
+  }
+}

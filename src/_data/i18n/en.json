@@ -1,0 +1,107 @@
+{
+  "a11y": {
+    "skip": "Skip to content"
+  },
+
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "story": "Our Story",
+    "find": "Find Us",
+    "order": "Order Now",
+    "main": "Main",
+    "open": "Open navigation"
+  },
+
+  "hero": {
+    "eyebrow": "ByWard Market · Ottawa",
+    "title1": "Halal Shawarma",
+    "title2": "in Ottawa",
+    "title3": "Yalla Habibi.",
+    "sub": "Authentic Lebanese shawarma, poutines and Mexican-fusion creations — made fresh, served with love in the heart of the ByWard Market.",
+    "cta1": "Order Now",
+    "cta2": "See the Menu",
+    "b1": "100% Halal Certified",
+    "b2": "Late-Night Bites",
+    "b3": "Fresh Daily"
+  },
+
+  "sig": {
+    "eyebrow": "Fan Favourites",
+    "title": "The Ones Everyone Talks About",
+    "sub": "Start here — our most-loved creations, from the famous Shawarmadilla to Ottawa's favourite shawarma poutine.",
+    "more": "See the Full Menu"
+  },
+
+  "band": {
+    "title": "Yalla Habibi.",
+    "sub": "100% halal · fresh daily · late night — see you at the Market."
+  },
+
+  "rev": {
+    "eyebrow": "Reviews",
+    "title": "What Ottawa Says",
+    "ph1": "Google review coming soon — this card is a placeholder for a real customer review.",
+    "ph2": "Google review coming soon — this card is a placeholder for a real customer review.",
+    "ph3": "Google review coming soon — this card is a placeholder for a real customer review.",
+    "phCite": "— Google review"
+  },
+
+  "menu": {
+    "eyebrow": "Our Menu",
+    "title": "Good Food. Made Fresh. Fully Loaded.",
+    "sub": "Wraps, platters, poutines and more — everything 100% halal, everything made to order.",
+    "categories": "Menu categories",
+    "note": "Prices shown are for small-sized portions. Prices in store and online may vary.",
+    "order": "Order Online"
+  },
+
+  "cta": {
+    "title": "Placing a Large Order?",
+    "sub": "Office lunches, family gatherings, events — we're happy to hear from you. Call or email and we'll set it up.",
+    "cta1": "Call +1 (613) 241-2882",
+    "cta2": "Email Us"
+  },
+
+  "story": {
+    "eyebrow": "Our Story",
+    "title": "From Beirut to ByWard",
+    "p1": "At Shawarma Time and Place, food is more than a meal — it's a tradition. Inspired by Lebanon's rich culinary heritage, our restaurant was created to bring authentic Lebanese shawarma to the heart of Ottawa's ByWard Market. Every recipe we serve reflects our commitment to quality, authenticity, and fresh ingredients.",
+    "p2": "Shawarma Time and Place is about community, culture, and bringing people together over great food. Whether it's your first visit or your hundredth, we're honored to serve you.",
+    "chefTitle": "Meet Chef Abou Adal",
+    "p3": "Behind every dish is Chef Abou Adal, whose passion for Lebanese cuisine drives everything that comes out of our kitchen. From slow-grilled shawarma meats to freshly prepared falafel, every item is crafted with time-honored techniques, attention to detail, and authentic flavor.",
+    "cta": "Taste the Story — See the Menu"
+  },
+
+  "find": {
+    "eyebrow": "Find Us",
+    "title": "In the Heart of the ByWard Market",
+    "sub": "Have a question? Placing a large order? Looking to get in touch? We're happy to hear from you.",
+    "visit": "Visit Us",
+    "call": "Call Us",
+    "email": "Email Us",
+    "hours": "Opening Hours",
+    "hoursNote": "Call us for today's hours →"
+  },
+
+  "hours": {
+    "mon": "Monday – Tuesday",
+    "wed": "Wednesday – Friday",
+    "sat": "Saturday",
+    "sun": "Sunday"
+  },
+
+  "badge": {
+    "sig": "Signature",
+    "veg": "Vegetarian"
+  },
+
+  "footer": {
+    "tag": "Halal shawarma, poutines & Mexican-fusion in the heart of Ottawa's ByWard Market. Yalla Habibi.",
+    "halal": "100% Halal Certified",
+    "explore": "Explore",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "rights": "All rights reserved."
+  }
+}

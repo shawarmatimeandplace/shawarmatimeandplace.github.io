@@ -1,0 +1,75 @@
+---
+pagination:
+  data: pageList
+  size: 1
+  alias: p
+
+eleventyComputed:
+  permalink: "{{ p.nonLocalizedUri }}"
+
+eleventyExcludeFromCollections: true
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+
+  <title>Shawarma Time &amp; Place</title>
+
+  <link
+    rel="alternate"
+    hreflang="en-CA"
+    href="{{ site.url }}/en/{% if p.slug %}{{ p.slug }}/{% endif %}">
+
+  <link
+    rel="alternate"
+    hreflang="fr-CA"
+    href="{{ site.url }}/fr/{% if p.slug %}{{ p.slug }}/{% endif %}">
+
+  <link
+    rel="alternate"
+    hreflang="x-default"
+    href="{{ site.url }}/{% if p.slug %}{{ p.slug }}/{% endif %}">
+
+  <script>
+    (function () {
+      const supportedLocales = {{ locales | dump | safe }}.map(l => l.code);
+
+      const browserLanguages = [
+        navigator.language,
+        ...(navigator.languages || [])
+      ];
+
+      let locale = "en";
+
+      for (const language of browserLanguages) {
+        const code = language.toLowerCase().split("-")[0];
+
+        if (supportedLocales.includes(code)) {
+          locale = code;
+          break;
+        }
+      }
+
+      window.location.replace("/" + locale + "/{% if p.slug %}{{ p.slug }}/{% endif %}");
+    })();
+  </script>
+
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=/en/">
+  </noscript>
+</head>
+
+<body>
+  <h1>Shawarma Time &amp; Place</h1>
+
+  <p>
+    <a href="/en/" hreflang="en-CA" lang="en">English</a>
+    |
+    <a href="/fr/" hreflang="fr-CA" lang="fr">Français</a>
+  </p>
+</body>
+</html>

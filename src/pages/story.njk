@@ -1,0 +1,81 @@
+---
+pagination:
+  data: locales
+  size: 1
+  alias: locale
+
+eleventyComputed:
+  permalink: "/{{ locale.code }}/story/index.html"
+
+pageId: story
+---
+
+{% extends "layout.njk" %}
+
+{% set t = i18n[locale.code] %}
+
+
+{% block content %}
+
+<section
+  class="section section--cream"
+  id="story"
+>
+
+  <div class="container story">
+
+    <div class="story__media reveal">
+
+      <img
+        class="story__img story__img--main"
+        src="/media/IMG_4686.jpg"
+        alt="Chef Abou Adal smiling, wearing the Shawarma Time & Place badge"
+        loading="lazy"
+        decoding="async"
+      >
+
+    </div>
+
+
+    <div class="story__text reveal">
+
+      <p class="section__eyebrow">
+        {{ t.story.eyebrow }}
+      </p>
+
+      <h1 class="section__title">
+        {{ t.story.title }}
+      </h1>
+
+      <p>{{ t.story.p1 }}</p>
+
+      <p>{{ t.story.p2 }}</p>
+
+
+      <blockquote class="story__chef">
+
+        <strong>
+          {{ t.story.chefTitle }}
+        </strong>
+
+        <p>{{ t.story.p3 }}</p>
+
+      </blockquote>
+
+
+      <p class="story__cta">
+
+        <a
+          class="btn btn--primary"
+          href="/{{ locale.code }}/menu/"
+        >{{ t.story.cta }}</a>
+
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+{% endblock %}

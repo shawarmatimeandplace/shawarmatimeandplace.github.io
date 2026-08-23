@@ -1,0 +1,54 @@
+{% macro menuCard(item, locale, t) %}
+
+<article class="card" data-category="{{ item.cat }}">
+  {% if item.photoAvailable %}
+    <img
+      class="card__img"
+      src="/{{ item.photo }}"
+      alt="{{ item[locale].name }}"
+      loading="lazy"
+      decoding="async"
+    >
+  {% else %}
+    <div class="media-ph">
+      <span class="media-ph__label">
+        Photo — {{ item.photo | replace("media/", "") }}
+      </span>
+    </div>
+  {% endif %}
+
+  <div class="card__body">
+    <div class="card__top">
+      <h3 class="card__name">{{ item[locale].name }}</h3>
+      <span class="card__price">${{ item.price | price }}</span>
+    </div>
+
+    <p class="card__desc">{{ item[locale].desc }}</p>
+
+    <div class="card__badges">
+      {% if item.signature %}
+        <span class="badge badge--sig">
+          {{ t.badge.sig }}
+        </span>
+      {% endif %}
+
+      {% if item.veg %}
+        <span class="badge badge--veg">
+          {{ t.badge.veg }}
+        </span>
+      {% endif %}
+    </div>
+  </div>
+</article>
+{% endmacro %}
+
+
+{% macro stars() %}
+<div class="review-card__stars" aria-label="5 out of 5 stars">
+  {% for i in range(5) %}
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+    </svg>
+  {% endfor %}
+</div>
+{% endmacro %}

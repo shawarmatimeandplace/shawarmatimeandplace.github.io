@@ -1,0 +1,413 @@
+{% set t = i18n[locale.code] %}
+{% set pageMeta = pages[pageId] %}
+{% set pageSlug = pageMeta.slug %}
+{% set pagePath = "/" ~ locale.code ~ ("/" ~ pageSlug if pageSlug else "") ~ "/" %}
+
+{% set restaurantUrl = site.url ~ pagePath %}
+
+<!DOCTYPE html>
+<html lang="{{ locale.language }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ pageMeta.description[locale.code] }}">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1a1512">
+
+  <title>{{ pageMeta.title[locale.code] }}</title>
+
+  <link rel="canonical" href="{{ restaurantUrl }}">
+
+  {% for language in locales %}
+
+    <link
+      rel="alternate"
+      hreflang="{{ language.language }}"
+      href="{{ site.url }}/{{ language.code }}/{% if pageSlug %}{{ pageSlug }}/{% endif %}">
+
+  {% endfor %}
+
+  <link
+    rel="alternate"
+    hreflang="x-default"
+    href="{{ site.url }}/{% if pageSlug %}{{ pageSlug }}/{% endif %}">
+
+  <meta property="og:title" content="{{ pageMeta.title[locale.code] }}">
+  <meta property="og:description" content="{{ pageMeta.ogDescription[locale.code] }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ restaurantUrl }}">
+  <meta property="og:image" content="{{ site.url }}{{ site.heroImage }}">
+  <meta property="og:image:alt" content="Shawarma Time &amp; Place in Ottawa's ByWard Market">
+  <meta property="og:site_name" content="Shawarma Time &amp; Place">
+
+  <meta property="og:locale" content="{{ locale.code }}">
+  {% for language in locales %}
+
+    {% if language.code != locale.code %}
+      <meta property="og:locale:alternate" content="{{ language.code }}">
+    {% endif %}
+
+  {% endfor %}
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ pageMeta.title[locale.code] }}">
+  <meta name="twitter:description" content="{{ pageMeta.description[locale.code] }}">
+  <meta name="twitter:image" content="{{ site.url }}{{ site.heroImage }}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+
+  <link rel="stylesheet" href="/styles/styles.css">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any">
+
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/icons/favicon-16x16.png">
+
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/icons/favicon-32x32.png">
+
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/icons/apple-touch-icon.png">
+
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link
+    rel="sitemap"
+    type="application/xml"
+    href="/sitemap.xml">
+
+
+  {% if pageId == "privacy" %}
+    <style>
+      .legal {
+        padding: 140px 0 90px;
+        max-width: 760px;
+      }
+
+      .legal h1 {
+        font-family: var(--font-display);
+        text-transform: uppercase;
+        margin-bottom: 24px;
+      }
+
+      .legal h2 {
+        font-family: var(--font-display);
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        margin: 34px 0 10px;
+        color: var(--red);
+      }
+
+      .legal p {
+        margin-bottom: 12px;
+        color: var(--text-soft);
+      }
+    </style>
+  {% endif %}
+
+
+  {% if pageId == "home"
+    or pageId == "menu"
+    or pageId == "story"
+    or pageId == "contact" %}
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "@id": "{{ site.url }}/#restaurant",
+        "name": "Shawarma Time & Place",
+        "description": "We serve authentic shawarmas, delicious poutines, and unique Mexican-fusion creations, all with fresh ingredients and friendly service every time.",
+        "slogan": "Halal Shawarma in Ottawa — Yalla Habibi",
+        "url": "{{ restaurantUrl }}",
+        "telephone": "+16132412882",
+        "email": "info@shawarmatimeandplace.ca",
+        "image": "{{ site.url }}{{ site.heroImage }}",
+        "logo": "{{ site.url }}{{ site.logo }}",
+        "servesCuisine": [
+          "Lebanese",
+          "Middle Eastern",
+          "Shawarma",
+          "Poutine"
+        ],
+        "priceRange": "$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "6 Byward Market Square",
+          "addressLocality": "Ottawa",
+          "addressRegion": "ON",
+          "postalCode": "K1N 5M4",
+          "addressCountry": "CA"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday"],
+            "opens": "11:30",
+            "closes": "23:59"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "11:30",
+            "closes": "02:59"
+          }
+        ],
+        "sameAs": [
+          "{{ site.instagram }}",
+          "{{ site.facebook }}",
+          "{{ site.uberEats }}"
+        ],
+        "menu": "{{ site.url }}/{{ locale.code }}/menu/",
+        "hasMap": "{{ site.maps }}",
+        "inLanguage": "{{ locale.language }}"
+    }
+    </script>
+
+    {% endif %}
+</head>
+
+
+<body data-page="{{ pageId }}">
+
+  <a class="skip-link" href="#main-content">
+    {{ t.a11y.skip }}
+  </a>
+
+
+  <header class="site-header" id="top">
+    <div class="container site-header__inner">
+
+      <a
+        href="/{{ locale.code }}/"
+        class="logo"
+        aria-label="Shawarma Time &amp; Place — {{ t.nav.home }}">
+
+        <img
+          class="logo__img"
+          src="{{ site.logo }}"
+          alt="Shawarma Time &amp; Place logo">
+
+        <span class="logo__text">
+          Shawarma <em>Time &amp; Place</em>
+        </span>
+      </a>
+
+      {% if pageId != "privacy" %}
+
+        <nav
+          class="main-nav"
+          id="mainNav"
+          aria-label="{{ t.nav.main }}"
+        >
+          <a
+            href="/{{ locale.code }}/"
+            {% if pageId == "home" %}aria-current="page"{% endif %}
+          >{{ t.nav.home }}</a>
+
+          <a
+            href="/{{ locale.code }}/menu/"
+            {% if pageId == "menu" %}aria-current="page"{% endif %}
+          >{{ t.nav.menu }}</a>
+
+          <a
+            href="/{{ locale.code }}/story/"
+            {% if pageId == "story" %}aria-current="page"{% endif %}
+          >{{ t.nav.story }}</a>
+
+          <a
+            href="/{{ locale.code }}/contact/"
+            {% if pageId == "contact" %}aria-current="page"{% endif %}
+          >{{ t.nav.find }}</a>
+        </nav>
+
+
+        <div class="site-header__actions">
+
+          <div
+            class="lang-switch"
+            role="group"
+            aria-label="Language / Langue"
+          >
+            {% for language in locales %}
+
+              {% if not loop.first %}
+                <span class="lang-switch__separator" aria-hidden="true">|</span>
+              {% endif %}
+
+              <a
+                href="/{{ language.code }}/{% if pageSlug %}{{ pageSlug }}/{% endif %}"
+                {% if language.code == locale.code %}class="is-active" aria-current="page"{% endif %}
+                hreflang="{{ language.language' }}"
+                lang="{{ language.language }}"
+              >{{ language.code | upper }}</a>
+
+            {% endfor %}
+          </div>
+
+
+          <a
+            class="btn btn--primary btn--sm"
+            href="{{ site.uberEats }}"
+            target="_blank"
+            rel="noopener"
+          >{{ t.nav.order }}</a>
+
+
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            type="button"
+            aria-label="{{ t.nav.open }}"
+            aria-expanded="false"
+            aria-controls="mainNav"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+        </div>
+
+      {% else %}
+
+        <div class="site-header__actions">
+          <a
+            class="btn btn--primary btn--sm"
+            href="/"
+          >← {{ t.nav.home }}</a>
+        </div>
+
+      {% endif %}
+
+    </div>
+  </header>
+
+
+  <main id="main-content">
+    {% block content %}{% endblock %}
+  </main>
+
+
+  {% if pageId == "privacy" %}
+
+    <footer class="site-footer">
+      <div class="container site-footer__bottom" style="border:0">
+        <p>
+          © <span id="year">2026</span>
+          Shawarma Time &amp; Place.
+          {{ t.footer.rights }}
+        </p>
+      </div>
+    </footer>
+
+  {% else %}
+
+    <footer class="site-footer">
+
+      <div class="container site-footer__grid">
+
+        <div>
+          <a
+            class="logo logo--footer"
+            href="/{{ locale.code }}/"
+            aria-label="Shawarma Time &amp; Place — {{ t.nav.home }}">
+
+            <img
+              class="logo__img"
+              src="{{ site.logo }}"
+              alt="Shawarma Time &amp; Place logo">
+
+            <span class="logo__text">
+              Shawarma <em>Time &amp; Place</em>
+            </span>
+          </a>
+
+          <p class="site-footer__tag">
+            {{ t.footer.tag }}
+          </p>
+
+          <p class="site-footer__halal">
+            <img
+              src="/media/halal-certification-logo-300x300.webp"
+              alt="{{ t.hero.b1 }}"
+              width="300"
+              height="300"
+            >
+            <span>{{ t.footer.halal }}</span>
+          </p>
+        </div>
+
+
+        <nav
+          class="site-footer__links"
+          aria-label="{{ t.footer.explore }}"
+        >
+          <strong>{{ t.footer.explore }}</strong>
+
+          <a href="/{{ locale.code }}/menu/">{{ t.nav.menu }}</a>
+          <a href="/{{ locale.code }}/story/">{{ t.nav.story }}</a>
+          <a href="/{{ locale.code }}/contact/">{{ t.nav.find }}</a>
+          <a href="/en/privacy/">{{ t.footer.privacy }}</a>
+        </nav>
+
+
+        <div class="site-footer__links">
+          <strong>{{ t.footer.contact }}</strong>
+
+          <a
+            href="{{ site.maps }}"
+            target="_blank"
+            rel="noopener"
+          >6 Byward Market Square, Ottawa</a>
+
+          <a href="tel:+16132412882">
+            +1 (613) 241-2882
+          </a>
+
+          <a href="mailto:info@shawarmatimeandplace.ca">
+            info@shawarmatimeandplace.ca
+          </a>
+
+          <a
+            href="{{ site.instagram }}"
+            target="_blank"
+            rel="noopener"
+          >@shawarmatimeandplace</a>
+        </div>
+
+      </div>
+
+
+      <div class="container site-footer__bottom">
+        <p>
+          © <span id="year">2026</span>
+          Shawarma Time &amp; Place.
+          {{ t.footer.rights }}
+        </p>
+      </div>
+
+    </footer>
+
+  {% endif %}
+
+
+  <script src="/scripts/app.js" defer></script>
+
+  {% if pageId == "menu" or pageId == "home" %}
+    <script src="/scripts/menu.js" defer></script>
+  {% endif %}
+
+</body>
+</html>

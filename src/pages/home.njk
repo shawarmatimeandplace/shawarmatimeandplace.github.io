@@ -1,0 +1,179 @@
+---
+pagination:
+  data: locales
+  size: 1
+  alias: locale
+
+eleventyComputed:
+  permalink: "/{{ locale.code }}/index.html"
+
+pageId: home
+---
+
+{% extends "layout.njk" %}
+{% from "helpers.njk" import menuCard, stars %}
+
+{% set t = i18n[locale.code] %}
+
+
+{% block content %}
+
+  {# TODO MEDIA: to use a hero VIDEO later, add inside .hero, before .hero__content. <video class="hero__video" src="media/hero-loop.mp4" autoplay muted loop playsinline poster="media/ShawarmaTimeAndPlace_Hero.jpg"></video> #}
+
+  <section class="hero">
+
+    <span class="hero__arabic" aria-hidden="true">
+      يالا حبيبي
+    </span>
+
+    <div class="container hero__content">
+
+      <p class="hero__eyebrow">
+        {{ t.hero.eyebrow }}
+      </p>
+
+      <h1 class="hero__title">
+        <span>{{ t.hero.title1 }}</span>
+        <span>{{ t.hero.title2 }}</span>
+        <span class="hero__title-accent">{{ t.hero.title3 }}</span>
+      </h1>
+
+      <p class="hero__sub">
+        {{ t.hero.sub }}
+      </p>
+
+      <div class="hero__ctas">
+        <a
+          class="btn btn--primary"
+          href="{{ site.uberEats }}"
+          target="_blank"
+          rel="noopener"
+        >{{ t.hero.cta1 }}</a>
+
+        <a
+          class="btn btn--ghost"
+          href="/{{ locale.code }}/menu/"
+        >{{ t.hero.cta2 }}</a>
+      </div>
+
+      <ul class="hero__badges">
+
+        <li class="pill">
+          <img
+            class="pill__img"
+            src="/media/halal-certification-logo-300x300.webp"
+            alt="Halal certification logo"
+            width="300"
+            height="300"
+          >
+          <span>{{ t.hero.b1 }}</span>
+        </li>
+
+        <li class="pill">
+          <span>{{ t.hero.b2 }}</span>
+        </li>
+
+        <li class="pill">
+          <span>{{ t.hero.b3 }}</span>
+        </li>
+
+      </ul>
+
+    </div>
+  </section>
+
+
+  <section
+    class="section section--cream"
+    id="signature"
+  >
+
+    <div class="container">
+
+      <header class="section__head reveal">
+        <p class="section__eyebrow">{{ t.sig.eyebrow }}</p>
+        <h2 class="section__title">{{ t.sig.title }}</h2>
+        <p class="section__sub">{{ t.sig.sub }}</p>
+      </header>
+
+
+      <div
+        class="signature-grid"
+        id="signatureGrid"
+      >
+
+        {% for id in menu.SIGNATURE_ORDER %}
+          {{ menuCard(menu.MENU_ITEMS | findById(id), locale.code, t) }}
+        {% endfor %}
+
+      </div>
+
+
+      <p class="signature-more reveal">
+        <a
+          class="btn btn--outline-dark"
+          href="/{{ locale.code }}/menu/"
+        >{{ t.sig.more }}</a>
+      </p>
+
+    </div>
+  </section>
+
+
+  <section class="band">
+
+    <div class="container band__inner reveal">
+
+      <img
+        class="band__halal"
+        src="/media/halal-certification-logo-300x300.webp"
+        alt="{{ t.hero.b1 }}"
+        width="300"
+        height="300"
+      >
+
+      <div class="band__text">
+        <p class="band__slogan">{{ t.band.title }}</p>
+        <p class="band__sub">{{ t.band.sub }}</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section
+    class="section section--cream"
+    id="reviews"
+  >
+
+    <div class="container">
+
+      <header class="section__head reveal">
+        <p class="section__eyebrow">{{ t.rev.eyebrow }}</p>
+        <h2 class="section__title">{{ t.rev.title }}</h2>
+      </header>
+
+      {# TODO REVIEWS: replace placeholder cards with real Google reviews #}
+
+      <div class="reviews-grid">
+
+        {% for i in [1, 2, 3] %}
+
+          <blockquote class="review-card review-card--ph reveal">
+
+            {{ stars() }}
+
+            <p>{{ t.rev["ph" ~ i] }}</p>
+
+            <cite>{{ t.rev.phCite }}</cite>
+
+          </blockquote>
+
+        {% endfor %}
+
+      </div>
+
+    </div>
+  </section>
+
+{% endblock %}

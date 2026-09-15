@@ -1,4 +1,4 @@
-# Shawarma Time & Place — Eleventy + Pug
+# Shawarma Time & Place
 
 This repository contains the source for the bilingual static site.
 

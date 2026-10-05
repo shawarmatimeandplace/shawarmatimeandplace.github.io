@@ -372,8 +372,16 @@ a:hover { color: var(--red-dark); }
 }
 
 /* ---------- Reviews ---------- */
-.reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.reviews-grid {
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, #000 4%, #000 96%, transparent);
+}
+.reviews-track { display: flex; width: max-content; animation: reviews-scroll 54s linear infinite; }
+.reviews-group { display: flex; flex: 0 0 auto; align-items: stretch; gap: 22px; padding-right: 22px; }
+.reviews-carousel:hover .reviews-track { animation-play-state: paused; }
+@keyframes reviews-scroll { to { transform: translateX(-50%); } }
 .review-card {
+  flex: 0 0 clamp(280px, 32vw, 360px);
   background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
   padding: 26px; display: flex; flex-direction: column; gap: 12px;
 }
@@ -469,6 +477,11 @@ a:hover { color: var(--red-dark); }
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .menu-grid .card { animation: none; }
+  .reviews-grid { overflow-x: auto; mask-image: none; scroll-snap-type: x mandatory; }
+  .reviews-track { width: auto; animation: none; }
+  .reviews-group { padding-right: 22px; }
+  .reviews-group[aria-hidden="true"] { display: none; }
+  .review-card { scroll-snap-align: start; }
 }
 
 /* ---------- Responsive ---------- */
@@ -477,7 +490,7 @@ a:hover { color: var(--red-dark); }
   .story { grid-template-columns: 1fr; gap: 40px; }
   .findus { grid-template-columns: 1fr; }
   .findus__map iframe { min-height: 380px; }
-  .reviews-grid { grid-template-columns: 1fr; }
+  .review-card { flex-basis: 82vw; }
   .site-footer__grid { grid-template-columns: 1fr; gap: 30px; }
 }
 
@@ -510,7 +523,7 @@ a:hover { color: var(--red-dark); }
   .signature-grid .card__price { font-size: 0.78rem; }
   .signature-grid .card__desc {
     font-size: 0.68rem; line-height: 1.35;
-    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+    display: -webkit-box; -webkit-line-clamp: 3; line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
   }
   .signature-grid .badge { font-size: 0.52rem; padding: 2px 6px; }
 }

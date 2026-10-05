@@ -41,10 +41,32 @@
   "rev": {
     "eyebrow": "Reviews",
     "title": "What Ottawa Says",
-    "ph1": "Google review coming soon — this card is a placeholder for a real customer review.",
-    "ph2": "Google review coming soon — this card is a placeholder for a real customer review.",
-    "ph3": "Google review coming soon — this card is a placeholder for a real customer review.",
-    "phCite": "— Google review"
+    "list": [
+      {
+        "text": "Absolutely lovely, so peak. The man serving us was the nicest person on human earth and so warm and friendly! Such great portions of chicken, actually flavourful food, yummy vegetables, good prices too! I would solely come back for the service, he was genuinely so nice and made our night!! 🌯",
+        "cite": "— Amrita Singh"
+      },
+      {
+        "text": "The food is awesome! John and Emily are amazing humans :). If you are visiting Ottawa you must try this place. It's very authentic, family owned, it has that spark Ottawa shawarmas are known for. Truly impressed! Great job guys!",
+        "cite": "— Simran Arora"
+      },
+      {
+        "text": "Very delicious shawarma! But I especially want to compliment the people who work here — they're incredibly friendly, kind, and welcoming. You can really tell that they care about what they do. I'll definitely be coming back!",
+        "cite": "— Oleksandr Fihel"
+      },
+      {
+        "text": "That's an amazing place to get shawarmas in a very good price. I am so glad that I stopped by here during my visit. The staff are absolute delight to deal with. A must try, you won't be disappointed.",
+        "cite": "— Aftab Rehman"
+      },
+      {
+        "text": "Lovely guy behind the counter and great chicken poutine! Full of good quality chicken.",
+        "cite": "— Michael N"
+      },
+      {
+        "text": "We got the falafel wrap and it was amazing. My little sister who hates tomatoes and onions ate the wrap enthusiastically because they were incorporated so well. The woman working was super friendly as well.",
+        "cite": "— Keerthi Manur"
+      }
+    ]
   },
 
   "menu": {

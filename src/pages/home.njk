@@ -145,35 +145,37 @@ pageId: home
     class="section section--cream"
     id="reviews"
   >
-
-    <div class="container">
-
+  
       <header class="section__head reveal">
         <p class="section__eyebrow">{{ t.rev.eyebrow }}</p>
         <h2 class="section__title">{{ t.rev.title }}</h2>
       </header>
 
-      {# TODO REVIEWS: replace placeholder cards with real Google reviews #}
+      <div class="reviews-carousel">
+        <div
+          class="reviews-grid"
+          role="region"
+          aria-label="{{ t.rev.title }}"
+          tabindex="0"
+        >
+          <div class="reviews-track">
+            {% for copy in [1, 2] %}
+              <div class="reviews-group"{% if copy == 2 %} aria-hidden="true"{% endif %}>
+                {% for rev in t.rev.list %}
+                  <blockquote class="review-card review-card--ph reveal">
+                    {{ stars() }}
 
-      <div class="reviews-grid">
+                    <p>{{ rev.text }}</p>
 
-        {% for i in [1, 2, 3] %}
-
-          <blockquote class="review-card review-card--ph reveal">
-
-            {{ stars() }}
-
-            <p>{{ t.rev["ph" ~ i] }}</p>
-
-            <cite>{{ t.rev.phCite }}</cite>
-
-          </blockquote>
-
-        {% endfor %}
-
+                    <cite>{{ rev.cite }}</cite>
+                  </blockquote>
+                {% endfor %}
+              </div>
+            {% endfor %}
+          </div>
+        </div>
       </div>
 
-    </div>
   </section>
 
 {% endblock %}

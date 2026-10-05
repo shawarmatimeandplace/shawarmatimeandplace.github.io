@@ -41,10 +41,32 @@
   "rev": {
     "eyebrow": "Avis",
     "title": "Ce qu'Ottawa en dit",
-    "ph1": "Avis Google bientôt disponible — cette carte est un espace réservé pour un véritable avis client.",
-    "ph2": "Avis Google bientôt disponible — cette carte est un espace réservé pour un véritable avis client.",
-    "ph3": "Avis Google bientôt disponible — cette carte est un espace réservé pour un véritable avis client.",
-    "phCite": "— Avis Google"
+    "list": [
+      {
+        "text": "Vraiment charmant, c'est le top. Le serveur qui s'est occupé de nous était la plus gentille personne au monde, tellement chaleureux et sympathique ! Des portions de poulet généreuses, des plats vraiment savoureux, des légumes délicieux, et des bons prix en plus ! Je reviendrais rien que pour le service : il était vraiment super sympa et a rendu notre soirée inoubliable !! 🌯",
+        "cite": "— Amrita Singh"
+      },
+      {
+        "text": "La cuisine est géniale ! John et Emily sont des gens formidables :). Si vous passez par Ottawa, vous devez absolument essayer cet endroit. C'est un restaurant authentique et familial, avec cette touche particulière que l'on retrouve dans les shawarmas d'Ottawa. Je suis vraiment impressionné ! Bravo à tous !",
+        "cite": "— Simran Arora"
+      },
+      {
+        "text": "Du shawarma vraiment délicieux ! Mais je tiens surtout à féliciter le personnel : ils sont incroyablement sympas, gentils et accueillants. On voit vraiment qu'ils mettent du cœur à l'ouvrage. Je reviendrai sans hésiter !",
+        "cite": "— Oleksandr Fihel"
+      },
+      {
+        "text": "C'est un endroit génial pour déguster des shawarmas à un très bon prix. Je suis vraiment ravi d'y avoir passé pendant mon séjour. Le personnel est absolument charmant. À essayer absolument, vous ne serez pas déçus.",
+        "cite": "— Aftab Rehman"
+      },
+      {
+        "text": "Le serveur est super sympa et la poutine au poulet est excellente ! Elle regorge de poulet de très bonne qualité.",
+        "cite": "— Michael N"
+      },
+      {
+        "text": "On a pris le wrap aux falafels et c'était délicieux. Ma petite sœur, qui déteste les tomates et les oignons, a mangé ce wrap avec appétit, car ces ingrédients étaient très bien incorporés. La serveuse était également très sympathique.",
+        "cite": "— Keerthi Manur"
+      }
+    ]
   },
 
   "menu": {

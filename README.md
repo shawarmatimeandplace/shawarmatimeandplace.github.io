@@ -53,3 +53,9 @@ The root-language selection/redirect behaviour maps /page/ to /en/page/ or /fr/p
 GitHub Pages is configured to use **GitHub Actions** as the publishing source. The workflow builds `_site/` and deploys that directory as the Pages artifact.
 
 With a custom GitHub Actions workflow, the custom domain is configured in the repository's GitHub Pages settings; a repository `CNAME` file is not required.
+
+## Copyright and reuse
+
+The source code and website content are provided publicly for viewing, but this repository does not grant permission to copy, modify, distribute, or use them in another website or business, except as allowed by applicable law. Rights in original code, website content, and brand assets owned by Shawarma Time & Place are reserved. Third-party materials remain subject to their own terms. The Shawarma Time & Place name, logos, and other brand assets are not licensed for reuse.
+
+If you need permission to use any material from this repository, contact [info@shawarmatimeandplace.ca](mailto:info@shawarmatimeandplace.ca).

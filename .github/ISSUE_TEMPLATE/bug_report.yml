@@ -1,0 +1,38 @@
+name: Website bug report
+description: Report a reproducible problem with the website.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include passwords, payment details, customer information, or other sensitive data. For security vulnerabilities, use the private reporting instructions in SECURITY.md."
+  - type: input
+    id: page
+    attributes:
+      label: Affected page
+      description: Provide the URL or page path.
+      placeholder: "https://shawarmatimeandplace.ca/en/"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Open ...\n2. Select ...\n3. Observe ..."
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device
+      description: Include browser version and device or operating system if relevant.
+    validations:
+      required: false

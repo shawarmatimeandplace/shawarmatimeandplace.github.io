@@ -1,0 +1,20 @@
+name: Website suggestion
+description: Suggest an improvement to the website.
+title: "[Suggestion]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would you like to improve?
+      description: Describe the problem or opportunity behind your suggestion.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: What do you suggest?
+      description: Describe the change you have in mind.
+    validations:
+      required: true

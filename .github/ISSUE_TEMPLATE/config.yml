@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: mailto:info@shawarmatimeandplace.ca?subject=Security%20vulnerability%20report
+    about: Please report security issues privately; do not open a public issue.
+  - name: Business or order inquiry
+    url: mailto:info@shawarmatimeandplace.ca
+    about: Contact Shawarma Time & Place about business, menu, or order questions.

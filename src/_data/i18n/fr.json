@@ -118,6 +118,37 @@
     "veg": "Végétarien"
   },
 
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "updated": "Dernière mise à jour : 14 octobre 2026",
+    "intro": "Cette politique explique comment Shawarma Time & Place traite les renseignements lorsque vous visitez https://shawarmatimeandplace.ca. Elle concerne ce site Web, et non les services ou transactions distincts accessibles par ses liens. Nous exerçons nos activités à Ottawa, en Ontario, au Canada.",
+    "operatorTitle": "Responsabilité",
+    "operator": "Shawarma Time & Place exploite ce site Web. Pour les résidents du Québec, la personne exerçant la plus haute autorité dans l'entreprise est responsable de la protection des renseignements personnels, à moins que cette fonction soit déléguée par écrit. La personne responsable peut être jointe à l'adresse courriel générale indiquée ci-dessous.",
+    "collectTitle": "Renseignements traités lors de votre visite",
+    "collect": "Notre site est hébergé par GitHub Pages. Pour fournir et sécuriser le site, le fournisseur d'hébergement peut traiter des renseignements techniques sur les requêtes, comme votre adresse IP, la date et l'heure de la requête, la page demandée, la page de provenance ainsi que des renseignements sur le navigateur, l'appareil et le réseau. Nous n'offrons pas de comptes, de formulaires de contact, de commandes en ligne ni de traitement de paiements sur ce site. Si vous nous écrivez ou nous appelez, vos coordonnées et les renseignements communiqués sont traités afin que nous puissions vous répondre.",
+    "clarityTitle": "Analyse par Microsoft Clarity",
+    "clarity": "Nous utilisons Microsoft Clarity pour effectuer des analyses facultatives du site, notamment des statistiques d'utilisation agrégées, des cartes thermiques et des reconstitutions de sessions, afin de comprendre et d'améliorer le site. Clarity peut traiter les pages et le contenu affichés lors d'une reconstitution, les adresses des pages, les heures de visite, les clics, le défilement et d'autres interactions, ainsi que des renseignements sur le navigateur et l'appareil et des identifiants. Microsoft peut également traiter l'adresse IP et des renseignements techniques pour fournir le service. Nous utilisons Clarity pour améliorer le site, et non pour vous identifier ou prendre des décisions à votre sujet. Nous n'utilisons pas les données de Clarity à des fins publicitaires ni dans une manière qui pourrait vous identifier personnellement.",
+    "clarityMore": "Microsoft décrit les témoins et technologies que Clarity peut utiliser, notamment les témoins internes _clck et _clsk et certains témoins Microsoft. Leur utilisation et les commandes disponibles sont décrites dans la",
+    "clarityCookieLink": "documentation des témoins de Clarity",
+    "and": "et la",
+    "clarityConsentLink": "documentation du mode de consentement",
+    "microsoftPolicyLead": "Le traitement effectué par Microsoft est également assujetti à la",
+    "microsoftPolicyLink": "Déclaration de confidentialité de Microsoft",
+    "thirdPartiesTitle": "Autres services tiers",
+    "thirdParties": "Nos pages contiennent des liens vers Uber Eats, Google Maps, Facebook et Instagram. Ces services reçoivent des renseignements lorsque vous suivez leurs liens et sont assujettis à leurs propres conditions de confidentialité. Nous ne contrôlons pas leurs pratiques.",
+    "useTitle": "Utilisation des renseignements",
+    "use": "Nous utilisons les renseignements pour exploiter, protéger et améliorer ce site Web, comprendre son utilisation, répondre aux demandes et respecter nos obligations légales. Lorsque la loi exige l'indication d'un fondement juridique, nous nous appuyons sur nos intérêts légitimes à exploiter et protéger le site et à répondre aux demandes, ou nos obligations légales. Nous n'utilisons pas ce site pour mener des campagnes publicitaires ni prendre des décisions concernant les visiteurs.",
+    "disclosureTitle": "Fournisseurs de services et traitement à l'étranger",
+    "disclosure": "Nous communiquons des renseignements aux fournisseurs de services dans la mesure nécessaire à l'hébergement du site, à la prestation d'analyses, ou au soutien des communications lorsque vous communiquez avec nous, ainsi que lorsque la loi l'exige. Nous ne vendons pas de renseignements personnels. Ces fournisseurs peuvent traiter des renseignements à l'extérieur du Canada, où ils peuvent être assujettis aux lois du lieu de traitement.",
+    "retentionTitle": "Conservation",
+    "retention": "Nous ne tenons pas de comptes d'utilisateurs du site ni de base de données distincte sur les analyses du site. Microsoft et nos fournisseurs d'hébergement conservent les renseignements selon leurs propres paramètres de service, conditions et pratiques de conservation; consultez leurs renseignements sur la confidentialité pour en savoir plus.",
+    "rightsTitle": "Vos choix et vos droits en matière de confidentialité",
+    "rights": "Selon les lois qui s'appliquent à votre situation, vous pouvez demander l'accès aux renseignements personnels que nous détenons, leur rectification ou, lorsque cela s'applique, leur suppression, ou soulever une préoccupation. Communiquez avec nous ci-dessous. Vous pouvez également communiquer avec le Commissariat à la protection de la vie privée du Canada ou, pour les questions relatives au Québec, avec la Commission d'accès à l'information du Québec. Si vous vous trouvez ailleurs, vous pouvez communiquer avec l'autorité locale chargée de la protection des renseignements personnels.",
+    "contactTitle": "Nous joindre",
+    "contact": "Pour toute question ou demande relative à la confidentialité, utilisez nos coordonnées publiées :",
+    "businessContact": "Responsable de la protection des données"
+  },
+
   "footer": {
     "tag": "Shawarma halal, poutines et fusion mexicaine au cœur du marché By d'Ottawa. Yalla Habibi.",
     "halal": "100 % halal certifié",

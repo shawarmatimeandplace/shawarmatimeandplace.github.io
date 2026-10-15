@@ -1,6 +1,6 @@
 ---
 pagination:
-  data: privacyLocales
+  data: locales
   size: 1
   alias: locale
 
@@ -19,82 +19,74 @@ pageId: privacy
 
 <div class="container legal">
 
-  <h1>Privacy Policy</h1>
+  <h1>{{ t.privacy.title }}</h1>
+
+  <p class="legal__updated">{{ t.privacy.updated }}</p>
+
+  <p>{{ t.privacy.intro }}</p>
+
+
+  <h2>{{ t.privacy.operatorTitle }}</h2>
+
+  <p>{{ t.privacy.operator }}</p>
+
+
+  <h2>{{ t.privacy.collectTitle }}</h2>
+
+  <p>{{ t.privacy.collect }}</p>
+
+
+  <h2>{{ t.privacy.clarityTitle }}</h2>
+
+  <p>{{ t.privacy.clarity }}</p>
 
   <p>
-    Shawarma Time &amp; Place is committed to protecting your privacy.
-    This statement explains what information we collect when you use our
-    website and how it is used. Questions? Contact us at
-    <a href="mailto:info@shawarmatimeandplace.ca">
-      info@shawarmatimeandplace.ca
-    </a>.
+    {{ t.privacy.clarityMore }}
+    <a href="https://learn.microsoft.com/en-us/clarity/setup-and-installation/clarity-cookies" target="_blank" rel="noopener noreferrer">{{ t.privacy.clarityCookieLink }}</a>
+    {{ t.privacy.and }}
+    <a href="https://learn.microsoft.com/en-us/clarity/setup-and-installation/consent-mode" target="_blank" rel="noopener noreferrer">{{ t.privacy.clarityConsentLink }}</a>.
+    {{ t.privacy.microsoftPolicyLead }}
+    <a href="https://www.microsoft.com/privacy/privacystatement" target="_blank" rel="noopener noreferrer">{{ t.privacy.microsoftPolicyLink }}</a>.
   </p>
 
 
-  <h2>Who we are</h2>
+  <h2>{{ t.privacy.thirdPartiesTitle }}</h2>
+
+  <p>{{ t.privacy.thirdParties }}</p>
+
+
+  <h2>{{ t.privacy.useTitle }}</h2>
+
+  <p>{{ t.privacy.use }}</p>
+
+
+  <h2>{{ t.privacy.disclosureTitle }}</h2>
+
+  <p>{{ t.privacy.disclosure }}</p>
+
+
+  <h2>{{ t.privacy.retentionTitle }}</h2>
+
+  <p>{{ t.privacy.retention }}</p>
+
+
+  <h2>{{ t.privacy.rightsTitle }}</h2>
+
+  <p>{{ t.privacy.rights }}</p>
+
+
+  <h2>{{ t.privacy.contactTitle }}</h2>
+
+  <p>{{ t.privacy.contact }}</p>
 
   <p>
-    Our website address is
-    <a href="https://shawarmatimeandplace.ca">
-      https://shawarmatimeandplace.ca
-    </a>
-    (shawarmatimeandplace.com redirects here). We are a shawarma
-    restaurant in the heart of Ottawa's ByWard Market, offering authentic
-    shawarmas, poutines and Mexican-fusion creations inspired by Lebanese
-    culinary heritage.
+    {{ t.privacy.businessContact }}, Shawarma Time &amp; Place ·
+    <a href="mailto:info@shawarmatimeandplace.ca">info@shawarmatimeandplace.ca</a>.
   </p>
 
-
-  <h2>Cookies &amp; stored data</h2>
-
   <p>
-    This site stores a single preference in your browser: your language
-    choice (English or French), so the site remembers it on your next visit.
-    It contains no personal data and can be cleared at any time through your
-    browser settings.
-  </p>
-
-
-  <h2>Analytics</h2>
-
-  <p>
-    We may use Microsoft Clarity and Microsoft Advertising to understand how
-    visitors use our website (behavioural metrics, heatmaps and session
-    replay) so we can improve it. Data collected through these tools is
-    controlled by Microsoft and processed according to the
-    <a
-      href="https://www.microsoft.com/privacy/privacystatement"
-      target="_blank"
-      rel="noopener"
-    >Microsoft Privacy Statement</a>.
-    It cannot be used to personally identify you. To view, delete or manage
-    this data, use the
-    <a
-      href="https://account.microsoft.com/privacy"
-      target="_blank"
-      rel="noopener"
-    >Microsoft Privacy Dashboard</a>.
-  </p>
-
-
-  <h2>What we don't do</h2>
-
-  <p>
-    We do not run user accounts, we do not collect payment information on
-    this site (ordering is handled by Uber Eats under their own privacy
-    policy), and we do not sell or share personally identifiable information
-    with third parties.
-  </p>
-
-
-  <h2>Contact</h2>
-
-  <p>
-    Shawarma Time &amp; Place · 6 Byward Market Square, Ottawa, ON K1N 5M4 ·
-    <a href="tel:+16132412882">+1 (613) 241-2882</a> ·
-    <a href="mailto:info@shawarmatimeandplace.ca">
-      info@shawarmatimeandplace.ca
-    </a>
+    6 Byward Market Square, Ottawa, ON K1N 5M4 ·
+    <a href="tel:+16132412882">+1 (613) 241-2882</a>.
   </p>
 
 </div>

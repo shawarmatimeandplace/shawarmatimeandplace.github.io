@@ -118,6 +118,37 @@
     "veg": "Vegetarian"
   },
 
+  "privacy": {
+    "title": "Privacy Policy",
+    "updated": "Last updated: October 14, 2026",
+    "intro": "This policy explains how Shawarma Time & Place handles information when you visit https://shawarmatimeandplace.ca. It covers this website, not the separate services or transactions you may access through links. We operate in Ottawa, Ontario, Canada.",
+    "operatorTitle": "Who is responsible",
+    "operator": "Shawarma Time & Place operates this website. For Quebec residents, the person exercising the highest authority in the business is responsible for personal information protection unless that function is delegated in writing. The responsible person can be reached through the shared privacy contact below.",
+    "collectTitle": "Information processed when you visit",
+    "collect": "Our website is hosted by GitHub Pages. To deliver and secure the site, the hosting provider may process technical request information such as your IP address, request date and time, requested page, referring page, and browser, device, and network details. We do not offer website accounts, contact forms, online ordering, or payment processing. If you email or call us, your contact details and the information you provide are processed so we can respond.",
+    "clarityTitle": "Microsoft Clarity analytics",
+    "clarity": "We use Microsoft Clarity for website analytics, including aggregated usage metrics, heatmaps, and session replay, to understand and improve the site. Clarity may process the pages and content displayed during a replay, page URLs, visit times, clicks, scrolling and other interactions, browser and device information, and identifiers. Microsoft may also process IP and technical information to provide the service. We use Clarity for site improvement, not to identify you or make decisions about you. We do not use Clarity's data for advertising purposes or in any way that can personally identify you.",
+    "clarityMore": "Microsoft documents the cookies and technologies Clarity may use, including the first-party cookies _clck and _clsk and certain Microsoft cookies. Cookie use and available controls are described in its",
+    "clarityCookieLink": "Clarity cookie documentation",
+    "and": "and",
+    "clarityConsentLink": "Consent Mode documentation",
+    "microsoftPolicyLead": "Microsoft's processing is also subject to the",
+    "microsoftPolicyLink": "Microsoft Privacy Statement",
+    "thirdPartiesTitle": "Other third-party services",
+    "thirdParties": "Our pages link to services such as Uber Eats, Google Maps, Facebook, and Instagram. Those services receive information when you follow their links and are governed by their own privacy terms. We do not control their practices.",
+    "useTitle": "How we use information",
+    "use": "We use information to operate, protect, and improve this website; understand site usage; respond to enquiries; and meet legal obligations. Where a law requires us to identify a legal basis, we rely on our legitimate interests in operating and protecting the website and responding to enquiries, or legal obligations, as applicable. We do not use this website to run advertising campaigns or make decisions about visitors.",
+    "disclosureTitle": "Service providers and international processing",
+    "disclosure": "We disclose information to service providers as needed to host the website, provide analytics, or support communications when you contact us, and when required by law. We do not sell personal information. These providers may process information outside Canada, where it may be subject to the laws of the place where it is processed.",
+    "retentionTitle": "Retention",
+    "retention": "We do not maintain website user accounts or a separate database of website analytics. Microsoft and our hosting providers retain information under their own service settings, terms, and retention practices; see their privacy information for details.",
+    "rightsTitle": "Your choices and privacy rights",
+    "rights": "Depending on the law that applies to you, you may also ask to access or correct personal information we hold, request its deletion where applicable, or raise a concern. Contact us below. You may also contact the Office of the Privacy Commissioner of Canada or, for Quebec matters, the Commission d'accès à l'information du Québec. If you are elsewhere, you may contact your local privacy regulator.",
+    "contactTitle": "Contact us",
+    "contact": "For privacy questions or requests, contact:",
+    "businessContact": "Privacy Officer"
+  },
+
   "footer": {
     "tag": "Halal shawarma, poutines & Mexican-fusion in the heart of Ottawa's ByWard Market. Yalla Habibi.",
     "halal": "100% Halal Certified",

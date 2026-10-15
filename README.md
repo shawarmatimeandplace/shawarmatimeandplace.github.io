@@ -10,6 +10,7 @@ This repository contains the source for the bilingual static site.
 - `src/_data/` — translations, menu data, site metadata, and page metadata.
 - `src/styles/` — CSS.
 - `src/scripts/` — progressive-enhancement JavaScript where compile-time doesn't cut it.
+- `src/fonts/` — fonts used on the website.
 - `src/media/` — media assets.
 - `src/icons/` — favicon/PWA icons of the logo.
 - `.github/workflows/` — GitHub Pages build/deployment workflow.

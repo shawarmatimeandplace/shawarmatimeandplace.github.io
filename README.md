@@ -46,6 +46,7 @@ The localized pages are generated as directory indexes:
 - `/en/contact/` → `_site/en/contact/index.html`
 - `/fr/contact/` → `_site/fr/contact/index.html`
 - `/en/privacy/` → `_site/en/privacy/index.html`
+- `/fr/privacy/` → `_site/fr/privacy/index.html`
 
 The root-language selection/redirect behaviour maps /page/ to /en/page/ or /fr/page/ automatically based on the user's browser language.
 

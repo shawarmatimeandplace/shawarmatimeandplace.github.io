@@ -376,7 +376,7 @@ a:hover { color: var(--red-dark); }
   overflow: hidden;
   mask-image: linear-gradient(to right, transparent, #000 4%, #000 96%, transparent);
 }
-.reviews-track { display: flex; width: max-content; animation: reviews-scroll 54s linear infinite; }
+.reviews-track { display: flex; width: max-content; animation: reviews-scroll var(--reviews-duration, 54s) linear infinite; }
 .reviews-group { display: flex; flex: 0 0 auto; align-items: stretch; gap: 22px; padding-right: 22px; }
 .reviews-carousel:hover .reviews-track { animation-play-state: paused; }
 @keyframes reviews-scroll { to { transform: translateX(-50%); } }

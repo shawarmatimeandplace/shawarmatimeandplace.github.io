@@ -1,6 +1,33 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", () => {
+  // Set the reviews scroll speed based on the available width
+  const reviewsTrack = document.querySelector(".reviews-track");
+  const reviewsGroup = reviewsTrack?.querySelector(".reviews-group");
+
+  if (reviewsTrack && reviewsGroup) {
+    const reviewScrollSpeed = 50;
+    let previousWidth = 0;
+
+    const updateReviewsSpeed = () => {
+      const width = reviewsGroup.getBoundingClientRect().width;
+
+      if (width && Math.abs(width - previousWidth) > 0.5) {
+        reviewsTrack.style.setProperty("--reviews-duration", `${width / reviewScrollSpeed}s`);
+        previousWidth = width;
+      }
+    };
+
+    updateReviewsSpeed();
+
+    // Listen to resize events to update the scroll speed if the width changes
+    if ("ResizeObserver" in window) {
+      new ResizeObserver(updateReviewsSpeed).observe(reviewsGroup);
+    } else {
+      window.addEventListener("resize", updateReviewsSpeed);
+    }
+  }
+
   // Mobile nav
   const toggle = document.getElementById("navToggle");
   const nav = document.getElementById("mainNav");

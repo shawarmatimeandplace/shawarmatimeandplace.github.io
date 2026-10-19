@@ -162,7 +162,7 @@ pageId: home
             {% for copy in [1, 2] %}
               <div class="reviews-group"{% if copy == 2 %} aria-hidden="true"{% endif %}>
                 {% for rev in t.rev.list %}
-                  <blockquote class="review-card review-card--ph reveal">
+                  <blockquote class="review-card review-card--ph">
                     {{ stars() }}
 
                     <p>{{ rev.text }}</p>

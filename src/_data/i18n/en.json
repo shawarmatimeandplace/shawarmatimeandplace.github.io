@@ -10,7 +10,8 @@
     "find": "Find Us",
     "order": "Order Now",
     "main": "Main",
-    "open": "Open navigation"
+    "open": "Open navigation",
+    "close": "Close navigation"
   },
 
   "hero": {

@@ -200,6 +200,13 @@
           href="/{{ locale.code }}/contact/"
           {% if pageId == "contact" %}aria-current="page"{% endif %}
         >{{ t.nav.find }}</a>
+
+        <a
+          class="main-nav__order"
+          href="{{ site.uberEats }}"
+          target="_blank"
+          rel="noopener"
+        >{{ t.nav.order }}</a>
       </nav>
 
       <div class="site-header__actions">
@@ -237,6 +244,8 @@
           id="navToggle"
           type="button"
           aria-label="{{ t.nav.open }}"
+          data-open-label="{{ t.nav.open }}"
+          data-close-label="{{ t.nav.close }}"
           aria-expanded="false"
           aria-controls="mainNav"
         >

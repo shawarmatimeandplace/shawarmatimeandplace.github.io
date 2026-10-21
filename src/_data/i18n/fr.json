@@ -10,7 +10,8 @@
     "find": "Nous trouver",
     "order": "Commander",
     "main": "Navigation principale",
-    "open": "Ouvrir la navigation"
+    "open": "Ouvrir la navigation",
+    "close": "Fermer la navigation"
   },
 
   "hero": {

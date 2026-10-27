@@ -69,8 +69,9 @@ pageId: menu
       id="menuGrid"
     >
 
+      {% set menuImageSizes = "(max-width: 600px) calc(100vw - 32px), (max-width: 960px) calc(46vw - 11px), (max-width: 1282px) calc(30.6667vw - 14.6667px), 379px" %}
       {% for item in menu.MENU_ITEMS %}
-        {{ menuCard(item, locale.code, t) }}
+        {{ menuCard(item, locale.code, t, menuImageSizes) }}
       {% endfor %}
 
     </div>

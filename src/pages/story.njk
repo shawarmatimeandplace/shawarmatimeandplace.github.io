@@ -11,6 +11,7 @@ pageId: story
 ---
 
 {% extends "layout.njk" %}
+{% from "helpers.njk" import responsivePicture %}
 
 {% set t = i18n[locale.code] %}
 
@@ -25,15 +26,8 @@ pageId: story
   <div class="container story">
 
     <div class="story__media reveal">
-
-      <img
-        class="story__img story__img--main"
-        src="/media/IMG_4686.jpg"
-        alt="Chef Abou Adal smiling, wearing the Shawarma Time & Place badge"
-        loading="lazy"
-        decoding="async"
-      >
-
+      {% set storyImageSizes = "(max-width: 600px) calc(100vw - 32px), (max-width: 960px) 92vw, (max-width: 1282px) calc(41.4vw - 25.2px), 506px" %}
+      {{ responsivePicture("/media/IMG_4686.jpg", "Chef Abou Adal smiling, wearing the Shawarma Time & Place badge", storyImageSizes, { imageClass: "story__img story__img--main", pictureClass: "story__picture", decoding: "sync", loading: "eager", fetchpriority: "high" }) }}
     </div>
 
 

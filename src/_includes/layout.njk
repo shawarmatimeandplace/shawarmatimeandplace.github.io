@@ -4,6 +4,8 @@
 {% set pagePath = "/" ~ locale.code ~ ("/" ~ pageSlug if pageSlug else "") ~ "/" %}
 
 {% set restaurantUrl = site.url ~ pagePath %}
+{% set socialImage = site.heroImage | responsiveImage %}
+{% from "helpers.njk" import responsivePicture %}
 
 <!DOCTYPE html>
 <html lang="{{ locale.language }}">
@@ -36,7 +38,7 @@
   <meta property="og:description" content="{{ pageMeta.ogDescription[locale.code] }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ restaurantUrl }}">
-  <meta property="og:image" content="{{ site.url }}{{ site.heroImage }}">
+  <meta property="og:image" content="{{ site.url }}{{ socialImage.socialSrc }}">
   <meta property="og:image:alt" content="Shawarma Time &amp; Place in Ottawa's ByWard Market">
   <meta property="og:site_name" content="Shawarma Time &amp; Place">
 
@@ -52,7 +54,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ pageMeta.title[locale.code] }}">
   <meta name="twitter:description" content="{{ pageMeta.description[locale.code] }}">
-  <meta name="twitter:image" content="{{ site.url }}{{ site.heroImage }}">
+  <meta name="twitter:image" content="{{ site.url }}{{ socialImage.socialSrc }}">
 
   <link rel="stylesheet" href="/styles/fonts.css">
   <link rel="stylesheet" href="/styles/styles.css">
@@ -94,7 +96,7 @@
       "url": "{{ restaurantUrl }}",
       "telephone": "+16132412882",
       "email": "info@shawarmatimeandplace.ca",
-      "image": "{{ site.url }}{{ site.heroImage }}",
+      "image": "{{ site.url }}{{ socialImage.socialSrc }}",
       "logo": "{{ site.url }}{{ site.logo }}",
       "servesCuisine": [
         "Lebanese",
@@ -290,12 +292,7 @@
         </p>
 
         <p class="site-footer__halal">
-          <img
-            src="/media/halal-certification-logo-300x300.webp"
-            alt="{{ t.hero.b1 }}"
-            width="300"
-            height="300"
-          >
+          {{ responsivePicture("/media/halal-certification-logo-300x300.webp", t.footer.halal, "34px", { width: 34, height: 34 }) }}
           <span>{{ t.footer.halal }}</span>
         </p>
       </div>

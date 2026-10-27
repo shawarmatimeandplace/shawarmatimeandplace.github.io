@@ -18,7 +18,7 @@ This repository contains the source for the bilingual static site.
 
 ## Local development
 
-Requires Node.js 24+.
+Requires Node.js 24+, and FFmpeg and FFprobe on `PATH` for responsive image generation.
 
 ```bash
 npm install
@@ -31,6 +31,7 @@ Build only:
 npm run build
 ```
 
+The optimized media files are written to `.cache/`.
 The generated site is written to `_site/`.
 
 ## URL structure
@@ -49,6 +50,12 @@ The localized pages are generated as directory indexes:
 - `/fr/privacy/` → `_site/fr/privacy/index.html`
 
 The root-language selection/redirect behaviour maps /page/ to /en/page/ or /fr/page/ automatically based on the user's browser language.
+
+## Media optimization
+
+All media assets should be optimized for various sizes and be offered as webp primarily with jpg/png fallbacks for browsers that don't support webp. Therefore, `scripts/optimize-media.js` automatically takes all `.jpg`, `.jpeg`, `.png`, and `.webp` files in `src/media/` and generates webp and png versions in a bunch of target sizes.
+
+The use of `src/_includes/helpers.njk`'s `responsivePicture` macro is necessary for all media assets. Place the image files in `src/media/` and then use `/media/<FILENAME.ext>` as the source for the macro. A `<picture>` element will be created with webp sources of all target sizes available, presenting the jpg/png fallbacks should the browser not support webp. The correct `sizes` parameter should be passed to the macro to ensure the browser can pick the ideal image source to load for the picture.
 
 ## Deployment
 

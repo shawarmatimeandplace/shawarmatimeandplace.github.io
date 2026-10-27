@@ -2,8 +2,10 @@ import { createHash } from "node:crypto";
 import { execFileSync, spawnSync } from "node:child_process";
 import {
   copyFileSync,
+  closeSync,
   existsSync,
   mkdirSync,
+  openSync,
   readFileSync,
   readdirSync,
   renameSync,
@@ -16,7 +18,6 @@ import { fileURLToPath } from "node:url";
 
 const projectRoot = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const sourceDirectory = path.join(projectRoot, "src", "media");
-const siteDirectory = path.join(projectRoot, "_site");
 const cacheDirectory = path.join(projectRoot, ".cache", "responsive-cache");
 const outputDirectory = path.join(projectRoot, ".cache", "responsive-media");
 const manifestPath = path.join(projectRoot, ".cache", "media-variants.json");
@@ -92,7 +93,13 @@ if (existsSync(cacheVersionPath) && readFileSync(cacheVersionPath, "utf8") !== c
 
 mkdirSync(cacheDirectory, { recursive: true });
 mkdirSync(outputDirectory, { recursive: true });
-writeFileSync(cacheVersionPath, cacheVersion);
+
+const cacheVersionFile = openSync(cacheVersionPath, "w");
+try {
+  writeFileSync(cacheVersionFile, cacheVersion);
+} finally {
+  closeSync(cacheVersionFile);
+}
 
 const manifest = {};
 const activeCacheFiles = new Set();

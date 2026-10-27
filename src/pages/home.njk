@@ -11,7 +11,7 @@ pageId: home
 ---
 
 {% extends "layout.njk" %}
-{% from "helpers.njk" import menuCard, stars %}
+{% from "helpers.njk" import menuCard, responsivePicture, stars %}
 
 {% set t = i18n[locale.code] %}
 
@@ -21,6 +21,8 @@ pageId: home
   {# TODO MEDIA: to use a hero VIDEO later, add inside .hero, before .hero__content. <video class="hero__video" src="media/hero-loop.mp4" autoplay muted loop playsinline poster="media/ShawarmaTimeAndPlace_Hero.jpg"></video> #}
 
   <section class="hero">
+
+    {{ responsivePicture(site.heroImage, "", "100vw", { pictureClass: "hero__picture", decoding: "sync", loading: "eager", fetchpriority: "high" }) }}
 
     <span class="hero__arabic" aria-hidden="true">
       يالا حبيبي
@@ -59,13 +61,7 @@ pageId: home
       <ul class="hero__badges">
 
         <li class="pill">
-          <img
-            class="pill__img"
-            src="/media/halal-certification-logo-300x300.webp"
-            alt="Halal certification logo"
-            width="300"
-            height="300"
-          >
+          {{ responsivePicture("/media/halal-certification-logo-300x300.webp", t.hero.b1, "22px", { imageClass: "pill__img", width: 22, height: 22, decoding: "sync", loading: "eager", fetchpriority: "high" }) }}
           <span>{{ t.hero.b1 }}</span>
         </li>
 
@@ -102,8 +98,9 @@ pageId: home
         id="signatureGrid"
       >
 
+        {% set signatureImageSizes = "(max-width: 380px) calc(100vw - 32px), (max-width: 600px) calc(50vw - 23px), (max-width: 960px) calc(46vw - 11px), (max-width: 1282px) calc(23vw - 16.5px), 278px" %}
         {% for id in menu.SIGNATURE_ORDER %}
-          {{ menuCard(menu.MENU_ITEMS | findById(id), locale.code, t) }}
+          {{ menuCard(menu.MENU_ITEMS | findById(id), locale.code, t, signatureImageSizes) }}
         {% endfor %}
 
       </div>
@@ -124,13 +121,7 @@ pageId: home
 
     <div class="container band__inner reveal">
 
-      <img
-        class="band__halal"
-        src="/media/halal-certification-logo-300x300.webp"
-        alt="{{ t.hero.b1 }}"
-        width="300"
-        height="300"
-      >
+      {{ responsivePicture("/media/halal-certification-logo-300x300.webp", t.hero.b1, "86px", { imageClass: "band__halal", width: 86, height: 86 }) }}
 
       <div class="band__text">
         <p class="band__slogan">{{ t.band.title }}</p>

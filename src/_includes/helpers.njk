@@ -1,14 +1,32 @@
-{% macro menuCard(item, locale, t) %}
+{% macro responsivePicture(source, alt, sizes, options={}) %}
+  {% set responsive = source | responsiveImage %}
+  <picture{% if options.pictureClass %} class="{{ options.pictureClass }}"{% endif %}{% if alt == "" %} aria-hidden="true"{% endif %}>
+    <source
+      type="image/webp"
+      srcset="{{ responsive.webpSrcset }}"
+      sizes="{{ sizes }}"
+    >
+    <img
+      {% if options.imageClass %}class="{{ options.imageClass }}"{% endif %}
+      src="{{ responsive.fallbackSrc }}"
+      srcset="{{ responsive.fallbackSrcset }}"
+      sizes="{{ sizes }}"
+      alt="{{ alt }}"
+      loading="{{ options.loading or 'lazy' }}"
+      decoding="{{ options.decoding or 'async' }}"
+      {% if options.fetchpriority %}fetchpriority="{{ options.fetchpriority }}"{% endif %}
+      {% if options.width %}width="{{ options.width }}"{% endif %}
+      {% if options.height %}height="{{ options.height }}"{% endif %}
+    >
+  </picture>
+{% endmacro %}
+
+
+{% macro menuCard(item, locale, t, sizes) %}
 
 <article class="card" data-category="{{ item.cat }}">
   {% if item.photoAvailable %}
-    <img
-      class="card__img"
-      src="/{{ item.photo }}"
-      alt="{{ item[locale].name }}"
-      loading="lazy"
-      decoding="async"
-    >
+    {{ responsivePicture(item.photo, item[locale].name, sizes, { imageClass: "card__img" }) }}
   {% else %}
     <div class="media-ph">
       <span class="media-ph__label">

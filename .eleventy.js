@@ -1,4 +1,15 @@
+import { readFileSync } from "node:fs";
+
+const mediaVariants = JSON.parse(
+  readFileSync(".cache/media-variants.json", "utf8")
+);
+
 export default function (eleventyConfig) {
+  eleventyConfig.addFilter("responsiveImage", (source) => {
+    const filename = decodeURIComponent(source.split("/").pop());
+    return mediaVariants[filename];
+  });
+
   eleventyConfig.addFilter(
     "findById",
     (items, id) => items.find(item => item.id === id)
@@ -16,7 +27,7 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({ "src/styles": "styles" });
   eleventyConfig.addPassthroughCopy({ "src/fonts": "fonts" });
-  eleventyConfig.addPassthroughCopy({ "src/media": "media" });
+  eleventyConfig.addPassthroughCopy({ ".cache/responsive-media": "media" });
   eleventyConfig.addPassthroughCopy({ "src/scripts": "scripts" });
   eleventyConfig.addPassthroughCopy({ "src/icons": "icons" });
   eleventyConfig.addPassthroughCopy({ "src/favicon.ico": "favicon.ico" });

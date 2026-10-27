@@ -23,6 +23,18 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v7
 
+      - name: Set up FFmpeg
+        id: ffmpeg
+        uses: FedericoCarboni/setup-ffmpeg@v3
+
+      - name: Restore responsive image cache
+        uses: actions/cache@v4
+        with:
+          path: .cache/responsive-cache
+          key: ${{ runner.os }}-responsive-media-${{ steps.ffmpeg.outputs.ffmpeg-version }}-${{ hashFiles('src/media/**', 'scripts/optimize-media.js') }}
+          restore-keys: |
+            ${{ runner.os }}-responsive-media-${{ steps.ffmpeg.outputs.ffmpeg-version }}-
+
       - name: Set up Node.js
         uses: actions/setup-node@v7
         with:

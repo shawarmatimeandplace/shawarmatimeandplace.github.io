@@ -15,9 +15,9 @@
     "url": "https://github.com/shawarmatimeandplace/website"
   },
   "scripts": {
-    "build": "eleventy",
-    "start": "eleventy --serve",
-    "clean": "rm -rf _site"
+    "build": "node scripts/optimize-media.js && eleventy",
+    "start": "node scripts/optimize-media.js && eleventy --serve",
+    "clean": "rm -rf _site .cache"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.7"

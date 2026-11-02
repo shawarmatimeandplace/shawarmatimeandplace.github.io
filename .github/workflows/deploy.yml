@@ -28,7 +28,7 @@ jobs:
         uses: FedericoCarboni/setup-ffmpeg@v3
 
       - name: Restore responsive image cache
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: .cache/responsive-cache
           key: ${{ runner.os }}-responsive-media-${{ steps.ffmpeg.outputs.ffmpeg-version }}-${{ hashFiles('src/media/**', 'scripts/optimize-media.js') }}

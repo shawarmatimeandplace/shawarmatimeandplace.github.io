@@ -20,6 +20,6 @@
     "clean": "rm -rf _site .cache"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.7"
+    "@11ty/eleventy": "^3.1.8"
   }
 }
